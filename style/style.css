@@ -17,10 +17,40 @@ section>img{
     position: absolute;
     right: 0;
     top: 0;
-    margin: 40px 40px 0 0;
+    margin: 36px 40px 0 0;
 }
 
 .card{
     width: 730px;
     height: 900px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input-fields{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.input{
+    margin-top: 80px;
+}
+
+.form-label{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+#inputCity{
+    padding: 15px;
+}
+
+#inputPassword4{
+    padding: 15px;
+}
+
+
+.btn-primary{
+    width: 470px;
+    margin-left: 40px;
+    margin-top: 40px;
 }

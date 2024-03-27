@@ -1,0 +1,22 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+section>img{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 900px;
+    height: 900px;
+    margin: 30px 0 0 40px;
+    border-radius: 10px;
+}
+
+#sign-in{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 300px;
+    margin-top: 40px;
+}

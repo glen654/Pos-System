@@ -40,3 +40,28 @@ hr{
     box-shadow: 0 20px 20px -20px #333;
     margin: -50px auto 10px;
 }
+
+.nav-links{
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: lightblue;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.nav-links>a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 15px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

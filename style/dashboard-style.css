@@ -85,5 +85,36 @@ hr{
 
 #top>h2{
     position: relative;
-    left: 300px;
+    left: 320px;
+    top: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#user-image{
+    position: absolute;
+    right: 0;
+    margin-right: 180px;
+    bottom: 210px;
+    border-radius: 100%;
+    background-color: white;
+    width: 70px;
+    aspect-ratio: 1/1;
+}
+
+#user-image>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+h4{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
 }

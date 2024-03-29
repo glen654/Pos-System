@@ -2,4 +2,15 @@ main{
     width: 100vw;
     height: 100vh;
     background-color: #ECF0F1;
+    overflow: hidden;
+}
+
+#nav-bar{
+    width: 15vw;
+    height: 95vh;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

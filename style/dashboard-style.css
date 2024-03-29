@@ -3,6 +3,16 @@ main{
     height: 100vh;
     background-color: #ECF0F1;
     overflow: hidden;
+    position: relative;
+}
+
+#top{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 30vh;
+    background-color: #686DE0;
+    margin-top: 0;
 }
 
 #nav-bar{
@@ -12,5 +22,21 @@ main{
     border-radius: 20px;
     margin-top: 10px;
     margin-left: 8px;
+    padding-top: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#nav-bar>h3{
+    margin-left: 60px;
+}
+
+hr{
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
 }

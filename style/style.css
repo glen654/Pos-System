@@ -1,8 +1,29 @@
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 main{
+    font-family: "Open Sans", sans-serif;;
     width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
+}
+
+#login-section>div>h2{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#login-section>div>h5{
+    font-size: medium;
+    color: gray;
+}
+
+#login-section>form{
+    margin-top: 40px;
 }
 
 section>img{
@@ -17,41 +38,33 @@ section>img{
     position: absolute;
     right: 0;
     top: 0;
-    margin: 36px 40px 0 0;
+    margin: 200px 220px 0 0;
 }
 
-.card{
-    width: 730px;
-    height: 900px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.form-control{
+    width: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.input-fields{
-    margin-left: 40px;
-    margin-top: 20px;
+input,input::-webkit-input-placeholder{
+    font-size: 15px;
+    color: gray;
 }
 
-.input{
-    margin-top: 80px;
+.form-control:focus{
+    border-color: #008DDA;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    outline: 0 none;
 }
 
-.form-label{
-    margin-left: 40px;
-    margin-top: 30px;
+.btn{
+    background-color: #9F70FD;
+    border: #9F70FD;
 }
 
-#inputCity{
-    padding: 15px;
-}
-
-#inputPassword4{
-    padding: 15px;
-}
-
-
-.btn-primary{
-    width: 470px;
-    margin-left: 40px;
-    margin-top: 40px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.btn:hover{
+    background-color: #9F70FD;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: #9F70FD;;
 }

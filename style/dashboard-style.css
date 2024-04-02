@@ -129,12 +129,34 @@ h4{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.cards{
+#card1{
     background-color: white;
     width: 400px;
     height: 150px;
     position: absolute;
     left: 320px;
+    top: 85px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#card2{
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 730px;
+    top: 85px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#card3{
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 1140px;
     top: 85px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

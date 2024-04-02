@@ -194,3 +194,13 @@ input,input::-webkit-input-placeholder{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     outline: 0 none;
 }
+
+.btn{
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 150px;
+    left: 40px;
+    background-color: #3498db;
+    border: #3498db;
+}

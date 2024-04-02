@@ -193,6 +193,7 @@ h4{
     bottom: 20px;
     right: 70px;
     border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #categories>h4{
@@ -244,5 +245,11 @@ h4{
     font-size: small;
     font-weight: bold;
     color:  #AAA69D;
+}
+
+.arrow-image{
+    position: absolute;
+    right: 40px;
+    top: 50px;
 }
 

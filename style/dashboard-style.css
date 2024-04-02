@@ -184,3 +184,35 @@ h4{
 #table-div>table>thead>tr>th{
     color: #AAA69D;
 }
+
+#categories{
+    width: 700px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    border-radius: 10px;
+}
+
+#categories>div{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-top: 45px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#categories>div>img{
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+

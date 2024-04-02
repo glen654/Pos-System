@@ -81,3 +81,11 @@ hr{
     color: white;
     transition-duration: 1s;
 }
+
+#top>h2{
+    position: relative;
+    left: 320px;
+    top: 30px;
+    color: white;
+    font-weight: bold;
+}

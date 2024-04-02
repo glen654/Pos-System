@@ -170,6 +170,66 @@ h4{
 
 }
 
+#card-image1{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    right: 10px;
+    top:10px;
+    background-color: #3498db;
+}
+
+#card-image2{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    right: 10px;
+    top:10px;
+    background-color: #e74c3c;
+}
+
+#card-image3{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    right: 10px;
+    top:10px;
+    background-color: #1abc9c;
+}
+
+#card-image1>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+#card-image2>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#card-image3>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+}
+
+
 #carouselExampleAutoplaying{
     width: 750px;
     position: absolute;

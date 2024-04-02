@@ -247,9 +247,22 @@ h4{
     color:  #AAA69D;
 }
 
-.arrow-image{
+#arrow-image1{
     position: absolute;
     right: 40px;
     top: 50px;
 }
+
+#arrow-image2{
+    position: absolute;
+    right: 40px;
+    top: 150px;
+}
+
+#arrow-image3{
+    position: absolute;
+    right: 40px;
+    top: 250px;
+}
+
 

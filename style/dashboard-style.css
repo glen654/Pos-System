@@ -180,3 +180,7 @@ h4{
     left: 0;
     color: black;
 }
+
+#table-div>table>thead>tr>th{
+    color: #AAA69D;
+}

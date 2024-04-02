@@ -153,6 +153,10 @@ h4{
     border-radius: 5px;
 }
 
+/*#table-div{
+    height: 500px;
+    background-color: red;
+}*/
 .table{
     position: absolute;
     bottom: 120px;
@@ -160,4 +164,9 @@ h4{
     width: 800px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+div>table>caption{
+    position: absolute;
+    top: 0;
 }

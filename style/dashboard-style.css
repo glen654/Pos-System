@@ -162,6 +162,14 @@ h4{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.card-h3{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+
+}
+
 #carouselExampleAutoplaying{
     width: 750px;
     position: absolute;

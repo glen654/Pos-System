@@ -195,6 +195,13 @@ h4{
     border-radius: 10px;
 }
 
+#categories>h4{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: black;
+    font-size: medium;
+}
 #categories>div{
     background-color: black;
     width: 50px;
@@ -214,5 +221,19 @@ h4{
     left: 0;
     bottom: 0;
     margin: auto;
+}
+
+#categories>div>h5{
+    position: absolute;
+    left: 60px;
+    font-size: small;
+    top: 5px;
+}
+
+#categories>div>h6{
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    font-size: small;
 }
 

@@ -237,10 +237,12 @@ h4{
     font-size: small;
 }
 
-.small{
+#categories>div>p{
     position: absolute;
-    top: 25px;
-    left: 120px;
+    left: 135px;
+    top: 23px;
     font-size: small;
+    font-weight: bold;
+    color:  #AAA69D;
 }
 

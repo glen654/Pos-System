@@ -1,0 +1,16 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+#top{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 30vh;
+    background-color: #686DE0;
+    margin-top: 0;
+}

@@ -200,6 +200,12 @@ h4{
     left: 20px;
 }
 
+#order-label{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
 #date-input{
     width: 200px;
     height: 40px;
@@ -208,6 +214,12 @@ h4{
     position: absolute;
     top: 40px;
     left: 240px;
+}
+
+#date-label{
+    position: absolute;
+    top: 15px;
+    left: 245px;
 }
 
 #inputState{
@@ -220,6 +232,12 @@ h4{
     left: 20px;
 }
 
+#customer-label{
+    position: absolute;
+    top: 95px;
+    left: 25px;
+}
+
 #id-input{
     width: 200px;
     height: 40px;
@@ -228,6 +246,12 @@ h4{
     position: absolute;
     top: 120px;
     left: 240px;
+}
+
+#id-label{
+    position: absolute;
+    top: 95px;
+    left: 245px;
 }
 
 #name-input{
@@ -240,6 +264,13 @@ h4{
     left: 20px;
 }
 
+#name-label{
+    position: absolute;
+    top: 190px;
+    left: 25px;
+}
+
+
 #address-input{
     width: 420px;
     height: 40px;
@@ -248,4 +279,10 @@ h4{
     position: absolute;
     top: 300px;
     left: 20px;
+}
+
+#address-label{
+    position: absolute;
+    top: 275px;
+    left: 25px;
 }

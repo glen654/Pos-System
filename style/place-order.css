@@ -123,3 +123,36 @@ h4{
     color: white;
     font-weight: bold;
 }
+
+#add1{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 120px;
+    left: 310px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#add2{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 120px;
+    left: 840px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#add3{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 120px;
+    left: 1370px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

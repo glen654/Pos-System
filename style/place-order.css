@@ -286,3 +286,15 @@ h4{
     top: 275px;
     left: 25px;
 }
+
+.form-control:focus{
+    border-color: #008DDA;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    outline: 0 none;
+}
+
+.form-select:focus{
+    border-color: #008DDA;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    outline: 0 none;
+}

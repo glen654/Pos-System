@@ -64,6 +64,12 @@ hr{
     font-weight: bold;
 }
 
+.dash-icon{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
 #nav-bar>.nav-links:last-child{
     margin-top: 340px;
 }

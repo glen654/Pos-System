@@ -156,3 +156,36 @@ h4{
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+#table-div{
+    width: 1555px;
+    background-color: white;
+    height: 300px;
+    position: absolute;
+    left: 310px;
+    bottom: 20px;
+    border-radius: 10px;
+}
+
+.table{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    margin: auto;
+    width: 1555px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#table-div>h4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+}
+
+#table-div>table>thead>tr>th{
+    color: #AAA69D;
+}

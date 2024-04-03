@@ -206,7 +206,23 @@ input,input::-webkit-input-placeholder{
 }
 
 .btn:hover{
-    background-color: #9F70FD;
+    background-color: #2980b9;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border: #9F70FD;;
+    border: #2980b9;
+}
+
+#add-button{
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 30px;
+    left: 550px;
+    background-color: #27ae60;
+    border: #27ae60;
+}
+
+#add-button:hover{
+    background-color: #1abc9c;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: #1abc9c;
 }

@@ -156,7 +156,7 @@ h4{
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     margin: auto;
     width: 1555px;
@@ -203,4 +203,10 @@ input,input::-webkit-input-placeholder{
     left: 40px;
     background-color: #3498db;
     border: #3498db;
+}
+
+.btn:hover{
+    background-color: #9F70FD;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: #9F70FD;;
 }

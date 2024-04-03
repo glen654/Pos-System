@@ -418,6 +418,73 @@ h4{
     border: #e74c3c;
 }
 
+#total{
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    color: #e74c3c;
+}
+
+#sub-total{
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    color: #e74c3c;
+}
+
+#cash-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 250px;
+    left: 20px;
+}
+
+#cash-label{
+    position: absolute;
+    top: 220px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+#discount-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 250px;
+    left: 240px;
+}
+
+#discount-label{
+    position: absolute;
+    top: 220px;
+    left: 240px;
+    color: #AAA69D;
+}
+
+#balance-input{
+    width: 420px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 340px;
+    left: 20px;
+}
+
+#balance-label{
+    position: absolute;
+    top: 310px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+
+
 
 
 

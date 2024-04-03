@@ -1,0 +1,125 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+#top{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 30vh;
+    background-color: #686DE0;
+    margin-top: 0;
+}
+
+#nav-bar{
+    width: 15vw;
+    height: 95vh;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-top: 20px;
+}
+
+#nav-bar>h3{
+    margin-left: 60px;
+}
+
+hr{
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+.nav-links{
+    margin-top: 50px;
+    margin-left: 10px;
+    background-color: white;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.nav-links>a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 15px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.dash-icon{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+#nav-bar>.nav-links:last-child{
+    margin-top: 340px;
+}
+
+.nav-links:hover{
+    background-color: #7F27FF;
+    color: white;
+    transition-duration: 1s;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nav-links>a:hover{
+    color: white;
+    transition-duration: 1s;
+}
+
+#top>h2{
+    position: relative;
+    left: 320px;
+    top: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#user-image{
+    position: absolute;
+    right: 0;
+    margin-right: 180px;
+    bottom: 210px;
+    border-radius: 100%;
+    background-color: white;
+    width: 70px;
+    aspect-ratio: 1/1;
+}
+
+#user-image>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+h4{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
+}

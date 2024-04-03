@@ -13,7 +13,7 @@
     <!--Bootstrap Css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Custom Css-->
-    <link rel="stylesheet" href="style/item.css">
+    <link rel="stylesheet" href="style/place-order.css">
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,82 @@
 <body>
 <main>
     <section>
+        <div id="top">
+            <h2>Place Order</h2>
+            <div id="user-image">
+                <img src="assets/images/icons8-user-50.png" title="user" alt="user-image">
+            </div>
+            <h4>Glen Perera</h4>
+            <div id="nav-bar">
+                <h3>Pos System</h3>
+                <hr>
+                <div class="nav-links">
+                    <i class="fa-solid fa-chart-line fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="">Dashboard</a>
+                </div>
+                <div class="nav-links">
+                    <i class="fa-solid fa-people-roof fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="">Manage Customer</a>
+                </div>
+                <div class="nav-links">
+                    <i class="fa-solid fa-bag-shopping fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="">Manage Item</a>
+                </div>
+                <div class="nav-links">
+                    <i class="fa-solid fa-cart-shopping fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="">Place Order</a>
+                </div>
+                <div class="nav-links">
+                    <i class="fa-solid fa-right-from-bracket fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="">Sign Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="add"></div>
+        <div class="add"></div>
+        <div class="add"></div>
 
+        <div id="table-div">
+            <h4>Order Table</h4>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">I001</th>
+                    <td>C001</td>
+                    <td>17/03/2024</td>
+                    <td>5</td>
+                    <td>Rs.200</td>
+                    <td>Rs.1000</td>
+                </tr>
+                <tr>
+                    <th scope="row">I002</th>
+                    <td>C001</td>
+                    <td>20/03/2024</td>
+                    <td>8</td>
+                    <td>Rs.250</td>
+                    <td>Rs.1350</td>
+                </tr>
+                <tr>
+                    <th scope="row">I001</th>
+                    <td>C001</td>
+                    <td>17/03/2024</td>
+                    <td>5</td>
+                    <td>Rs.200</td>
+                    <td>Rs.1000</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 </main>
 

@@ -483,6 +483,19 @@ h4{
     color: #AAA69D;
 }
 
+.purchase-btn{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    background-color: #27ae60;
+    border: #27ae60;
+}
+
+.purchase-btn:hover{
+    background-color: #2ecc71;
+    border: #2ecc71;
+}
+
 
 
 

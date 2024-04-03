@@ -407,5 +407,17 @@ h4{
     color: #AAA69D;
 }
 
+.btn{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+
+.btn:hover{
+    background-color: #e74c3c;
+    border: #e74c3c;
+}
+
+
 
 

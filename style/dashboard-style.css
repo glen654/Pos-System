@@ -124,6 +124,7 @@ h4{
     font-weight: bold;
 }
 
+
 #chart{
     background-color: white;
     width: 800px;
@@ -133,6 +134,12 @@ h4{
     left: 310px;
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#cards{
+    /*width: 500px;*/
+    display: flex;
+    justify-content: space-between;
 }
 
 #card1{
@@ -364,6 +371,10 @@ h4{
     position: absolute;
     right: 40px;
     top: 250px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+
 }
 
 

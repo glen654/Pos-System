@@ -458,7 +458,7 @@ h4{
 
     #top>h2{
         position: relative;
-        left: 320px;
+        left: 300px;
         top: 30px;
         font-weight: bold;
     }
@@ -469,7 +469,7 @@ h4{
         margin-right: 180px;
         bottom: 210px;
         border-radius: 100%;
-        width: 70px;
+        width: 60px;
         aspect-ratio: 1/1;
     }
 
@@ -485,7 +485,7 @@ h4{
     h4{
         position: absolute;
         right: 0;
-        margin-right: 30px;
+        margin-right: 40px;
         font-weight: bold;
     }
 
@@ -505,28 +505,28 @@ h4{
     }
 
     #card1{
-        width: 400px;
+        width: 260px;
         height: 150px;
         position: absolute;
-        left: 320px;
+        left: 280px;
         top: 85px;
         border-radius: 10px;
     }
 
     #card2{
-        width: 400px;
+        width: 260px;
         height: 150px;
         position: absolute;
-        left: 730px;
+        left: 550px;
         top: 85px;
         border-radius: 10px;
     }
 
     #card3{
-        width: 400px;
+        width: 260px;
         height: 150px;
         position: absolute;
-        left: 1140px;
+        left: 820px;
         top: 85px;
         border-radius: 10px;
     }

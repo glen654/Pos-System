@@ -454,7 +454,7 @@ input,input::-webkit-input-placeholder{
 
     #top>h2{
         position: relative;
-        left: 296px;
+        left: 30px;
         top: 30px;
         font-weight: bold;
     }
@@ -462,8 +462,8 @@ input,input::-webkit-input-placeholder{
     #user-image{
         position: absolute;
         right: 0;
-        margin-right: 180px;
-        bottom: 193px;
+        margin-right: 262px;
+        bottom: 320px;
         border-radius: 100%;
         width: 70px;
         aspect-ratio: 1/1;
@@ -481,7 +481,7 @@ input,input::-webkit-input-placeholder{
     h4{
         position: absolute;
         right: 0;
-        margin-right: 30px;
+        margin-right: 119px;
         font-weight: bold;
     }
 
@@ -490,7 +490,7 @@ input,input::-webkit-input-placeholder{
         height: 358px;
         position: absolute;
         top: 200px;
-        left: 280px;
+        left: 12px;
         border-radius: 15px;
     }
 
@@ -507,11 +507,11 @@ input,input::-webkit-input-placeholder{
     }
 
     #table-div{
-        width: 993px;
+        width: 1004px;
         height: 300px;
         position: absolute;
-        left: 272px;
-        bottom: -4px;
+        left: 9px;
+        bottom: 450px;
         border-radius: 10px;
     }
 
@@ -522,7 +522,7 @@ input,input::-webkit-input-placeholder{
         bottom: 30px;
         left: 0;
         margin: auto;
-        width: 993px;
+        width: 1004px;
         border-radius: 10px;
     }
 

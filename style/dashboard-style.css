@@ -742,12 +742,6 @@ h4{
     }
 
     #nav-bar{
-        /*width: 20vw;
-        height: 95vh;
-        border-radius: 20px;
-        margin-top: 2px;
-        margin-left: 8px;
-        padding-top: 20px;*/
         display: none;
     }
 
@@ -859,7 +853,7 @@ h4{
         width: 300px;
         height: 150px;
         position: absolute;
-        left: 30px;
+        left: 40px;
         top: 100px;
         border-radius: 10px;
     }
@@ -868,7 +862,7 @@ h4{
         width: 300px;
         height: 150px;
         position: absolute;
-        left: 340px;
+        left: 350px;
         top: 100px;
         border-radius: 10px;
     }
@@ -877,7 +871,7 @@ h4{
         width: 300px;
         height: 150px;
         position: absolute;
-        left: 652px;
+        left: 662px;
         top: 100px;
         border-radius: 10px;
     }

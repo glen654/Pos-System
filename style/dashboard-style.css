@@ -2086,7 +2086,343 @@ h4{
 }
 
 @media all and (min-width: 375px) and (max-width: 425px) {
+    main{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
 
+    #top{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 30vh;
+        margin-top: 0;
+    }
+
+    #nav-bar{
+        display: none;
+    }
+
+    #nav-bar>h3{
+        margin-left: 60px;
+    }
+
+    hr{
+        border:none;
+        height: 20px;
+        width: 90%;
+        height: 50px;
+        margin-top: 0;
+        border-bottom: 1px solid #1f1209;
+        margin: -50px auto 10px;
+    }
+
+    .nav-links{
+        margin-top: 50px;
+        margin-left: 10px;
+        width: 220px;
+        height: 60px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+
+    .nav-links>a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 15px 0 0 0;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .dash-icon{
+        position: absolute;
+        top: 15px;
+        left: 13px;
+    }
+
+    #nav-bar>.nav-links:last-child{
+        margin-top: 340px;
+    }
+
+    .nav-links:hover{
+        transition-duration: 1s;
+        width: 260px;
+        border-radius: 10px;
+    }
+
+    .nav-links>a:hover{
+        transition-duration: 1s;
+    }
+
+    #top>h2{
+        position: relative;
+        left: 14px;
+        top: 30px;
+        font-weight: bold;
+    }
+
+    #user-image{
+        position: absolute;
+        right: 0;
+        margin-right: 160px;
+        bottom: 189px;
+        border-radius: 100%;
+        width: 40px;
+        aspect-ratio: 1/1;
+    }
+
+    #user-image>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 25px;
+    }
+
+    h4{
+        position: absolute;
+        right: 0;
+        margin-right: 81px;
+        font-weight: bold;
+        font-size: small;
+    }
+
+
+    #chart{
+        width: 367px;
+        height: 300px;
+        position: absolute;
+        top: 581px;
+        left: 10px;
+        border-radius: 15px;
+    }
+
+    #cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #card1{
+        width: 367px;
+        height: 150px;
+        position: absolute;
+        left: 10px;
+        top: 100px;
+        border-radius: 10px;
+    }
+
+    #card2{
+        width: 367px;
+        height: 150px;
+        position: absolute;
+        left: 10px;
+        top: 258px;
+        border-radius: 10px;
+    }
+
+    #card3{
+        width: 367px;
+        height: 150px;
+        position: absolute;
+        left: 10px;
+        top: 417px;
+        border-radius: 10px;
+    }
+
+    .card-h3{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+
+    }
+
+    #card-image1{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        right: 10px;
+        top:10px;
+    }
+
+    #card-image2{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        right: 10px;
+        top:10px;
+    }
+
+    #card-image3{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        right: 10px;
+        top:10px;
+    }
+
+    #card-image1>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+
+    }
+
+    #card-image2>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #card-image3>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40px;
+    }
+
+    .card-number{
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+
+    #carouselExampleAutoplaying{
+        display: none;
+    }
+
+    .carousel-inner>.carousel-item>img{
+        display: none;
+    }
+
+    #table-div{
+        width: 367px;
+        height: 300px;
+        position: absolute;
+        left: 10px;
+        bottom: -349px;
+        border-radius: 10px;
+    }
+
+    .table{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 367px;
+        border-radius: 10px;
+    }
+
+    #table-div>h4{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    #categories{
+        width: 367px;
+        height: 300px;
+        position: absolute;
+        bottom: -661px;
+        left: 10px;
+        border-radius: 10px;
+    }
+
+    #categories>h4{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: medium;
+    }
+
+    #categories>div{
+        width: 50px;
+        height: 50px;
+        margin-top: 45px;
+        margin-left: 20px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    #categories>div>img{
+        width: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #categories>div>h5{
+        position: absolute;
+        left: 60px;
+        font-size: small;
+        top: 5px;
+    }
+
+    #categories>div>h6{
+        position: absolute;
+        top: 25px;
+        left: 60px;
+        font-size: small;
+    }
+
+    #categories>div>p{
+        position: absolute;
+        left: 135px;
+        top: 23px;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    #arrow-image1{
+        position: absolute;
+        right: 40px;
+        top: 50px;
+    }
+
+    #arrow-image2{
+        position: absolute;
+        right: 40px;
+        top: 150px;
+    }
+
+    #arrow-image3{
+        position: absolute;
+        right: 40px;
+        top: 250px;
+    }
+
+    .bi-list{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
 }
 
 @media all and (min-width: 320px) and (max-width: 375px) {

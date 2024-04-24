@@ -1073,7 +1073,7 @@ h4{
     main{
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
+        overflow-y: scroll;
         position: relative;
     }
 
@@ -1147,7 +1147,7 @@ h4{
 
     #top>h2{
         position: relative;
-        left: 50px;
+        left: 30px;
         top: 30px;
         font-weight: bold;
     }
@@ -1155,8 +1155,8 @@ h4{
     #user-image{
         position: absolute;
         right: 0;
-        margin-right: 211px;
-        bottom: 335px;
+        margin-right: 232px;
+        bottom: 280px;
         border-radius: 100%;
         width: 60px;
         aspect-ratio: 1/1;
@@ -1174,17 +1174,17 @@ h4{
     h4{
         position: absolute;
         right: 0;
-        margin-right: 74px;
+        margin-right: 98px;
         font-weight: bold;
     }
 
 
     #chart{
-        width: 450px;
+        width: 757px;
         height: 300px;
         position: absolute;
         top: 284px;
-        left: 32px;
+        left: 15px;
         border-radius: 15px;
     }
 
@@ -1291,24 +1291,19 @@ h4{
     }
 
     #carouselExampleAutoplaying{
-        width: 500px;
-        position: absolute;
-        right: 20px;
-        top: 284px;
+        display: none;
     }
 
     .carousel-inner>.carousel-item>img{
-        width: 500px;
-        height: 300px;
-        border-radius: 5px;
+        display: none;
     }
 
     #table-div{
-        width: 550px;
+        width: 756px;
         height: 300px;
         position: absolute;
-        left: 21px;
-        bottom: 454px;
+        left: 17px;
+        bottom: 270px;
         border-radius: 10px;
     }
 
@@ -1319,7 +1314,7 @@ h4{
         bottom: 0;
         left: 0;
         margin: auto;
-        width: 550px;
+        width: 756px;
         border-radius: 10px;
     }
 
@@ -1331,11 +1326,11 @@ h4{
 
 
     #categories{
-        width: 400px;
+        width: 757px;
         height: 300px;
         position: absolute;
-        bottom: 454px;
-        right: 30px;
+        bottom: -47px;
+        left: 17px;
         border-radius: 10px;
     }
 

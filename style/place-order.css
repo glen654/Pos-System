@@ -1322,7 +1322,398 @@ h4{
 }
 
 @media all and (min-width: 768px) and (max-width: 820px){
+    main{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
 
+    #top{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 30vh;
+        margin-top: 0;
+    }
+
+    #nav-bar{
+        display: none;
+    }
+
+
+    hr{
+        border:none;
+        height: 20px;
+        width: 90%;
+        height: 50px;
+        margin-top: 0;
+        margin: -50px auto 10px;
+    }
+
+    .dash-icon{
+        position: absolute;
+        top: 15px;
+        left: 13px;
+    }
+
+
+    #top>h2{
+        position: relative;
+        left: 30px;
+        top: 30px;
+        font-weight: bold;
+    }
+
+    #user-image{
+        position: absolute;
+        right: 0;
+        margin-right: 262px;
+        bottom: 320px;
+        border-radius: 100%;
+        width: 70px;
+        aspect-ratio: 1/1;
+    }
+
+    #user-image>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    h4{
+        position: absolute;
+        right: 0;
+        margin-right: 119px;
+        font-weight: bold;
+    }
+
+    #add1{
+        width: 360px;
+        height: 419px;
+        position: absolute;
+        top: 120px;
+        left: 18px;
+        border-radius: 15px;
+    }
+
+    #add2{
+        width: 360px;
+        height: 436px;
+        position: absolute;
+        top: 120px;
+        left: 427px;
+        border-radius: 15px;
+    }
+
+    #add3{
+        width: 364px;
+        height: 420px;
+        position: absolute;
+        top: 564px;
+        left: 245px;
+        border-radius: 15px;
+    }
+
+    #table-div{
+        width: 780px;
+        height: 300px;
+        position: absolute;
+        left: 15px;
+        bottom: -117px;
+        border-radius: 10px;
+    }
+
+    .table{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 30px;
+        left: 0;
+        margin: auto;
+        width: 780px;
+        border-radius: 10px;
+    }
+
+    #table-div>h4{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    #order-input{
+        width: 149px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+    }
+
+    #order-label{
+        position: absolute;
+        top: 30px;
+        left: 25px;
+    }
+
+    #date-input{
+        width: 149px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 60px;
+        left: 180px;
+    }
+
+    #date-label{
+        position: absolute;
+        top: 30px;
+        left: 181px;
+    }
+
+    #inputState{
+        width: 149px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+
+    #customer-label{
+        position: absolute;
+        top: 110px;
+        left: 25px;
+    }
+
+    #id-input{
+        width: 149px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 180px;
+    }
+
+    #id-label{
+        position: absolute;
+        top: 110px;
+        left: 181px;
+    }
+
+    #name-input{
+        width: 309px;
+        height: 45px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 240px;
+        left: 20px;
+    }
+
+    #name-label{
+        position: absolute;
+        top: 210px;
+        left: 25px;
+    }
+
+
+    #address-input{
+        width: 309px;
+        height: 45px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 320px;
+        left: 20px;
+    }
+
+    #address-label{
+        position: absolute;
+        top: 295px;
+        left: 25px;
+    }
+
+
+
+    #inputState2{
+        width: 149px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+    }
+
+    #item-label{
+        position: absolute;
+        top: 30px;
+        left: 25px;
+    }
+
+    #item-id-input{
+        width: 149px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 60px;
+        left: 175px;
+    }
+
+    #item-id-label{
+        position: absolute;
+        top: 30px;
+        left: 176px;
+    }
+
+    #item-name-input{
+        width: 304px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+
+    #item-name-label{
+        position: absolute;
+        top: 110px;
+        left: 25px;
+    }
+
+    #price-input{
+        width: 149px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 240px;
+        left: 20px;
+    }
+
+    #price-label{
+        position: absolute;
+        top: 215px;
+        left: 25px;
+    }
+
+    #qty-input{
+        width: 149px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 240px;
+        left: 176px;
+    }
+
+    #qty-label{
+        position: absolute;
+        top: 215px;
+        left: 178px;
+    }
+
+    #order-qty-input{
+        width: 305px;
+        height: 45px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 320px;
+        left: 20px;
+    }
+
+    #order-qty-label{
+        position: absolute;
+        top: 290px;
+        left: 20px;
+    }
+
+    .btn{
+        position: absolute;
+        bottom: 3px;
+        right: 35px;
+        width: 118px;
+        height: 43px;
+    }
+
+
+    #total{
+        position: absolute;
+        top: 80px;
+        left: 14px;
+    }
+
+    #sub-total{
+        position: absolute;
+        top: 160px;
+        left: 14px;
+    }
+
+    #cash-input{
+        width: 142px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 250px;
+        left: 20px;
+    }
+
+    #cash-label{
+        position: absolute;
+        top: 220px;
+        left: 25px;
+    }
+
+    #discount-input{
+        width: 142px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 250px;
+        left: 182px;
+    }
+
+    #discount-label{
+        position: absolute;
+        top: 223px;
+        left: 186px;
+    }
+
+    #balance-input{
+        width: 306px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 321px;
+        left: 20px;
+    }
+
+    #balance-label{
+        position: absolute;
+        top: 297px;
+        left: 25px;
+    }
+
+    .purchase-btn{
+        position: absolute;
+        bottom: 5px;
+        right: 39px;
+    }
 }
 
 @media all and (min-width: 430px) and (max-width: 768px){

@@ -1119,7 +1119,7 @@ input,input::-webkit-input-placeholder{
         height: 253px;
         position: absolute;
         left: 8px;
-        bottom: -115px;
+        bottom: -96px;
         border-radius: 10px;
     }
 
@@ -1186,7 +1186,169 @@ input,input::-webkit-input-placeholder{
 }
 
 @media all and (min-width: 320px) and (max-width: 375px){
+    main{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
 
+    #top{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 30vh;
+        margin-top: 0;
+    }
+
+    #nav-bar{
+        display: none;
+    }
+
+
+    hr{
+        border:none;
+        height: 20px;
+        width: 90%;
+        height: 50px;
+        margin-top: 0;
+        margin: -50px auto 10px;
+    }
+
+    .dash-icon{
+        position: absolute;
+        top: 15px;
+        left: 13px;
+    }
+
+
+    #top>h2{
+        position: relative;
+        left: 19px;
+        top: 22px;
+        font-weight: bold;
+    }
+
+    #user-image{
+        position: absolute;
+        left: 10px;
+        margin-right: 262px;
+        bottom: 93px;
+        border-radius: 100%;
+        width: 45px;
+        aspect-ratio: 1/1;
+    }
+
+    #user-image>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 35px;
+    }
+
+    h4{
+        position: absolute;
+        right: 0;
+        margin-right: 196px;
+        font-weight: bold;
+        top: 81px;
+    }
+
+    #add{
+        width: 348px;
+        height: 174px;
+        position: absolute;
+        top: 504px;
+        left: 15px;
+        border-radius: 15px;
+    }
+
+    #carouselExampleAutoplaying{
+        width: 348px;
+        position: absolute;
+        right: 13px;
+        top: 155px;
+        height: 340px;
+    }
+
+    .carousel-inner>.carousel-item>img{
+        width: 348px;
+        height: 340px;
+        border-radius: 5px;
+    }
+
+    #table-div{
+        width: 357px;
+        height: 253px;
+        position: absolute;
+        left: 8px;
+        bottom: -273px;
+        border-radius: 10px;
+    }
+
+    .table{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: -23px;
+        left: 0;
+        margin: auto;
+        width: 357px;
+        border-radius: 10px;
+    }
+
+    .table>thead>tr>th{
+        font-size: 10px;
+    }
+
+    .table>tbody>tr>th{
+        font-size: 12px;
+    }
+
+    .table>tbody>tr>td{
+        font-size: 12px;
+    }
+
+    #table-div>h4{
+        position: absolute;
+        top: 5px;
+        left: 12px;
+        font-size: 15px;
+    }
+
+    .form-control{
+        width: 220px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+    }
+
+    input,input::-webkit-input-placeholder{
+        font-size: 15px;
+    }
+
+
+    .btn{
+        position: absolute;
+        width: 138px;
+        height: 45px;
+        top: 113px;
+        left: 17px;
+    }
+
+
+    #add-button{
+        position: absolute;
+        width: 102px;
+        height: 45px;
+        top: 30px;
+        left: 240px;
+    }
 }
 
 @media all and (max-width: 320px){

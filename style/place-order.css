@@ -1764,7 +1764,7 @@ h4{
         position: absolute;
         right: 0;
         margin-right: 262px;
-        bottom: 320px;
+        bottom: 231px;
         border-radius: 100%;
         width: 70px;
         aspect-ratio: 1/1;
@@ -1800,7 +1800,7 @@ h4{
         height: 436px;
         position: absolute;
         top: 120px;
-        left: 427px;
+        left: 393px;
         border-radius: 15px;
     }
 
@@ -1814,11 +1814,11 @@ h4{
     }
 
     #table-div{
-        width: 780px;
-        height: 300px;
+        width: 738px;
+        height: 269px;
         position: absolute;
         left: 15px;
-        bottom: -117px;
+        bottom: -248px;
         border-radius: 10px;
     }
 
@@ -1829,7 +1829,7 @@ h4{
         bottom: 30px;
         left: 0;
         margin: auto;
-        width: 780px;
+        width: 738px;
         border-radius: 10px;
     }
 

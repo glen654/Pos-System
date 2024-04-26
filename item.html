@@ -56,14 +56,79 @@
         <div id="add">
             <div class="mb-3">
                 <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Enter Item Code">
-                <button type="button" class="btn btn-primary btn-lg">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <i class="fa-solid fa-magnifying-glass-plus fa-lg" style="color: #ffffff;"></i>
                     Search
                 </button>
-                <button type="button" class="btn btn-success btn-lg" id="add-button">
+
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel2">Item Form</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3">
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <input type="text" class="form-control first-name"  placeholder="Item Code" aria-label="First name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control last-name"  placeholder="Item Name" aria-label="Last name">
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control inputAddress" id="inputAddress2" placeholder="QtyOnHand">
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control inputTel" id="inputTel2" placeholder="UnitPrice">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="btn-edit">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success btn-lg" id="add-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <i class="fa-solid fa-circle-plus fa-lg" style="color: #ffffff;"></i>
                     Add
                 </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Item Form</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3">
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <input type="text" class="form-control first-name"  placeholder="Item Code" aria-label="First name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control last-name"  placeholder="Item Name" aria-label="Last name">
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control inputAddress" id="inputAddress" placeholder="QtyOnHand">
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control inputTel" id="inputTel" placeholder="UnitPrice">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="btn-save">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">

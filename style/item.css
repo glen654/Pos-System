@@ -233,6 +233,72 @@ input,input::-webkit-input-placeholder{
     border: #1abc9c;
 }
 
+.modal-body{
+    width: 400px;
+    height: 350px;
+}
+
+.first-name{
+    width: 230px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.last-name{
+    width: 230px;
+    position: absolute;
+    top: 30px;
+    left: 249px;
+}
+
+.inputAddress{
+    width: 470px;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+
+.inputTel{
+    width: 470px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+#btn-save{
+    position: absolute;
+    bottom: -165px;
+    right: -296px;
+    margin: auto;
+    width: 80px;
+    height: 50px;
+    font-weight: bold;
+    background-color: #27ae60;
+}
+
+.btn-close{
+    position: absolute;
+    bottom: -165px;
+    right: -105px;
+    margin: auto;
+    width: 80px;
+    height: 50px;
+    font-weight: bold;
+    background-color: #e74c3c;
+}
+
+#btn-edit{
+    position: absolute;
+    bottom: -165px;
+    right: -296px;
+    margin: auto;
+    width: 80px;
+    height: 50px;
+    font-weight: bold;
+    background-color: #f39c12;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1440px){
     main{
         width: 100vw;

@@ -241,28 +241,28 @@ input,input::-webkit-input-placeholder{
 .first-name{
     width: 230px;
     position: absolute;
-    top: 30px;
+    top: 80px;
     left: 10px;
 }
 
 .last-name{
     width: 230px;
     position: absolute;
-    top: 30px;
+    top: 80px;
     left: 249px;
 }
 
 .inputAddress{
     width: 470px;
     position: absolute;
-    top: 90px;
+    top: 130px;
     left: 10px;
 }
 
 .inputTel{
     width: 470px;
     position: absolute;
-    top: 150px;
+    top: 180px;
     left: 10px;
 }
 
@@ -297,6 +297,13 @@ input,input::-webkit-input-placeholder{
     height: 50px;
     font-weight: bold;
     background-color: #f39c12;
+}
+
+.id{
+    width: 230px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1440px){

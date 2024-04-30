@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="52ca3129-0221-4909-9947-89294bdd92c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,21 +58,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Pos-System" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Pos-System" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -107,7 +91,10 @@
       <workItem from="1714022115521" duration="2343000" />
       <workItem from="1714024524571" duration="4204000" />
       <workItem from="1714052060215" duration="7977000" />
-      <workItem from="1714108638447" duration="1247000" />
+      <workItem from="1714108638447" duration="6795000" />
+      <workItem from="1714137231058" duration="307000" />
+      <workItem from="1714148220946" duration="78000" />
+      <workItem from="1714186978016" duration="1287000" />
     </task>
     <servers />
   </component>

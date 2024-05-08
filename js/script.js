@@ -23,7 +23,7 @@ $(".btn-item").on('click',() =>{
     $("#item-section").css({display: 'block'});
 });
 
-$(".place-order-section").on('click',() =>{
+$(".btn-place-order").on('click',() =>{
     $("#dashboard-section").css({display: 'none'});
     $("#place-order-section").css({display: 'block'});
 });
@@ -32,4 +32,3 @@ $(".btn-signOut").on('click',() =>{
     $("#dashboard-section").css({display: 'none'});
     $("#login").css({display: 'block'});
 });
-

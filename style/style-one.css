@@ -180,7 +180,7 @@
     height: 300px;
     position: absolute;
     left: 310px;
-    bottom: 20px;
+    bottom: 10px;
     border-radius: 10px;
 }
 
@@ -212,7 +212,7 @@
     width: 800px;
     height: 400px;
     position: absolute;
-    top: 200px;
+    top: 260px;
     left: 310px;
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

@@ -148,7 +148,7 @@ h4{
     border-radius: 5px;
 }
 
-#table-div{
+/*#table-div{
     width: 1555px;
     background-color: white;
     height: 300px;
@@ -175,7 +175,7 @@ h4{
     top: 0;
     left: 0;
     color: black;
-}
+}*/
 
 #table-div>table>thead>tr>th{
     color: #AAA69D;
@@ -430,7 +430,7 @@ input,input::-webkit-input-placeholder{
         border-radius: 5px;
     }
 
-    #table-div{
+   #table-div{
         width: 993px;
         height: 300px;
         position: absolute;

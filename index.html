@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="style/customer.css">
     <link rel="stylesheet" href="style/item.css">
     <link rel="stylesheet" href="style/place-order.css">
+    <link rel="stylesheet" href="style/style-one.css">
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,37 +57,37 @@
 
 <!--Dashboard section-->
 <section id="dashboard-section">
-    <div id="top">
+    <div class="top">
         <h2>Dashboard</h2>
-        <div id="user-image">
+        <div class="user-image">
             <img src="assets/images/icons8-user-50.png" title="user" alt="user-image">
         </div>
         <h4>Glen Perera</h4>
-        <div id="cards">
-            <div id="card1">
+        <div class="cards">
+            <div class="card1">
                 <h3 class="card-h3">Customers</h3>
-                <div id="card-image1">
+                <div class="card-image1">
                     <img src="assets/images/icons8-customers-50%20(1).png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
-            <div id="card2">
+            <div class="card2">
                 <h3 class="card-h3">Items</h3>
-                <div id="card-image2">
+                <div class="card-image2">
                     <img src="assets/images/icons8-grocery-bag-30.png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
-            <div id="card3">
+            <div class="card3">
                 <h3 class="card-h3">Orders</h3>
-                <div id="card-image3">
+                <div class="card-image3">
                     <img src="assets/images/icons8-minimum-order-64.png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
         </div>
 
-        <div id="nav-bar">
+        <div class="nav-bar">
             <h3>Pos System</h3>
             <hr>
             <div class="nav-links btn-dashboard">
@@ -115,7 +116,7 @@
         </div>
     </div>
     <div id="chart"></div>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="assets/images/online-shop-logo-template-design-illustration-vector.jpg" class="d-block w-40" alt="...">
@@ -136,7 +137,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div id="table-div">
+    <div class="table-div">
         <h4>Sales By Customers</h4>
         <table class="table">
             <thead>
@@ -194,37 +195,37 @@
 </section>
 <!--Customer section-->
 <section id="customer-section">
-    <div id="top">
+    <div class="top">
         <h2>Dashboard</h2>
-        <div id="user-image">
+        <div class="user-image">
             <img src="assets/images/icons8-user-50.png" title="user" alt="user-image">
         </div>
         <h4>Glen Perera</h4>
-        <div id="cards">
-            <div id="card1">
+        <div class="cards">
+            <div class="card1">
                 <h3 class="card-h3">Customers</h3>
-                <div id="card-image1">
+                <div class="card-image1">
                     <img src="assets/images/icons8-customers-50%20(1).png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
-            <div id="card2">
+            <div class="card2">
                 <h3 class="card-h3">Items</h3>
-                <div id="card-image2">
+                <div class="card-image2">
                     <img src="assets/images/icons8-grocery-bag-30.png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
-            <div id="card3">
+            <div class="card3">
                 <h3 class="card-h3">Orders</h3>
-                <div id="card-image3">
+                <div class="card-image3">
                     <img src="assets/images/icons8-minimum-order-64.png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
         </div>
 
-        <div id="nav-bar">
+        <div class="nav-bar">
             <h3>Pos System</h3>
             <hr>
             <div class="nav-links btn-dashboard">
@@ -252,9 +253,9 @@
             </a>
         </div>
     </div>
-    <div id="add">
+    <div class="add">
         <div class="mb-3">
-            <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Enter Customer ID">
+            <input type="text" class="form-control form-control-lg" id="formGroupExampleInput1" placeholder="Enter Customer ID">
             <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 <i class="fa-solid fa-magnifying-glass-plus fa-lg" style="color: #ffffff;"></i>
                 Search
@@ -289,12 +290,12 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" id="btn-edit">Edit</button>
+                            <button type="button" class="btn btn-primary btn-edit">Edit</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-success btn-lg" id="add-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-success btn-lg btn-add"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <i class="fa-solid fa-circle-plus fa-lg" style="color: #ffffff;"></i>
                 Add
             </button>
@@ -328,14 +329,14 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" id="btn-save">Save</button>
+                            <button type="button" class="btn btn-primary btn-save">Save</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="assets/images/online-shop-logo-template-design-illustration-vector.jpg" class="d-block w-40" alt="...">
@@ -356,7 +357,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div id="table-div">
+    <div class="table-div">
         <h4>Customer Table</h4>
         <table class="table">
             <thead>
@@ -394,37 +395,37 @@
 </section>
 <!--Item section-->
 <section id="item-section">
-    <div id="top">
+    <div class="top">
         <h2>Dashboard</h2>
-        <div id="user-image">
+        <div class="user-image">
             <img src="assets/images/icons8-user-50.png" title="user" alt="user-image">
         </div>
         <h4>Glen Perera</h4>
-        <div id="cards">
-            <div id="card1">
+        <div class="cards">
+            <div class="card1">
                 <h3 class="card-h3">Customers</h3>
-                <div id="card-image1">
+                <div class="card-image1">
                     <img src="assets/images/icons8-customers-50%20(1).png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
-            <div id="card2">
+            <div class="card2">
                 <h3 class="card-h3">Items</h3>
-                <div id="card-image2">
+                <div class="card-image2">
                     <img src="assets/images/icons8-grocery-bag-30.png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
-            <div id="card3">
+            <div class="card3">
                 <h3 class="card-h3">Orders</h3>
-                <div id="card-image3">
+                <div class="card-image3">
                     <img src="assets/images/icons8-minimum-order-64.png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
         </div>
 
-        <div id="nav-bar">
+        <div class="nav-bar">
             <h3>Pos System</h3>
             <hr>
             <div class="nav-links btn-dashboard">
@@ -452,7 +453,7 @@
             </a>
         </div>
     </div>
-    <div id="add">
+    <div class="add">
         <div class="mb-3">
             <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Enter Item Code">
             <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -487,12 +488,12 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" id="btn-edit">Edit</button>
+                            <button type="button" class="btn btn-primary btn-edit">Edit</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-success btn-lg" id="add-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-success btn-lg btn-add"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <i class="fa-solid fa-circle-plus fa-lg" style="color: #ffffff;"></i>
                 Add
             </button>
@@ -523,14 +524,14 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" id="btn-save">Save</button>
+                            <button type="button" class="btn btn-primary btn-save">Save</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying3" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="assets/images/online-shop-logo-template-design-illustration-vector.jpg" class="d-block w-40" alt="...">
@@ -551,7 +552,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div id="table-div">
+    <div class="table-div">
         <h4>Item Table</h4>
         <table class="table">
             <thead>
@@ -589,37 +590,37 @@
 </section>
 <!--Place order section-->
 <section id="place-order-section">
-    <div id="top">
+    <div class="top">
         <h2>Dashboard</h2>
-        <div id="user-image">
+        <div class="user-image">
             <img src="assets/images/icons8-user-50.png" title="user" alt="user-image">
         </div>
         <h4>Glen Perera</h4>
-        <div id="cards">
-            <div id="card1">
+        <div class="cards">
+            <div class="card1">
                 <h3 class="card-h3">Customers</h3>
-                <div id="card-image1">
+                <div class="card-image1">
                     <img src="assets/images/icons8-customers-50%20(1).png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
-            <div id="card2">
+            <div class="card2">
                 <h3 class="card-h3">Items</h3>
-                <div id="card-image2">
+                <div class="card-image2">
                     <img src="assets/images/icons8-grocery-bag-30.png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
-            <div id="card3">
+            <div class="card3">
                 <h3 class="card-h3">Orders</h3>
-                <div id="card-image3">
+                <div class="card-image3">
                     <img src="assets/images/icons8-minimum-order-64.png" alt="">
                 </div>
                 <h3 class="card-number">24</h3>
             </div>
         </div>
 
-        <div id="nav-bar">
+        <div class="nav-bar">
             <h3>Pos System</h3>
             <hr>
             <div class="nav-links btn-dashboard">
@@ -733,7 +734,7 @@
         <button type="button" class="btn btn-danger btn-lg purchase-btn">Purchase</button>
     </div>
 
-    <div id="table-div">
+    <div class="table-div">
         <h4>Order Table</h4>
         <table class="table">
             <thead>

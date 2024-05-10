@@ -30,6 +30,17 @@
     position: relative;
 }
 
+#btn-order-add{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+
+#btn-order-add:hover{
+    background-color: #e74c3c;
+    border: #e74c3c;
+}
+
 .top>h2{
     position: relative;
     left: 320px;

@@ -1,7 +1,7 @@
 export default class CustomerModel{
     constructor(cusId,cusName,cusAddress,cusTel) {
         this._cusId = cusId;
-        this.-cusName = cusName;
+        this._cusName = cusName;
         this._cusAddress = cusAddress;
         this._cusTel = cusTel;
     }

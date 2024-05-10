@@ -241,14 +241,14 @@ input,input::-webkit-input-placeholder{
 .first-name{
     width: 230px;
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: 10px;
 }
 
 .last-name{
     width: 230px;
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: 249px;
 }
 
@@ -300,10 +300,10 @@ input,input::-webkit-input-placeholder{
 }
 
 .id{
-    width: 230px;
+    width: 100px;
     position: absolute;
     top: 30px;
-    left: 10px;
+    left: 5px;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1440px){

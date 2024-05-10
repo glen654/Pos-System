@@ -256,5 +256,32 @@
     background-color: #27ae60;
 }
 
+#customer-id{
+    width: 230px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
 
+.first-name{
+    width: 230px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+
+
+.inputAddress{
+    width: 470px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+.inputTel{
+    width: 470px;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
 

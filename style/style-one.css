@@ -1,3 +1,35 @@
+#dashboard-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+#customer-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+#item-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+#place-order-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
 .top>h2{
     position: relative;
     left: 320px;
@@ -309,3 +341,24 @@
     left: 10px;
 }
 
+#table-div-dash{
+    width: 800px;
+    background-color: white;
+    height: 300px;
+    position: absolute;
+    left: 310px;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
+#table-div-dash>.table{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

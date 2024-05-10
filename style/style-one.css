@@ -1,3 +1,10 @@
+.top>h2{
+    position: relative;
+    left: 320px;
+    top: 30px;
+    color: white;
+    font-weight: bold;
+}
 .nav-bar{
     width: 15vw;
     height: 95vh;

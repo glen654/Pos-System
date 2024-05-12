@@ -30,6 +30,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/controller/Customer.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/model/CustomerModel.js" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -124,6 +128,7 @@
       <workItem from="1715181545780" duration="610000" />
       <workItem from="1715230983892" duration="1714000" />
       <workItem from="1715238506017" duration="74000" />
+      <workItem from="1715346338020" duration="10238000" />
     </task>
     <servers />
   </component>

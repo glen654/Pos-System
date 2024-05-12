@@ -16,12 +16,12 @@ function loadTableCustomer(){
     });
 }
 $("#btn-save").on('click',() =>{
-    var id = $("#customer-id").val();
-    var name = $("#customer-name").val();
-    var address = $("#inputAddress").val();
-    var tel = $("#inputTel").val();
+    var cusId = $("#customer-id").val();
+    var cusName = $("#customer-name").val();
+    var cusAddress = $("#inputAddress1").val();
+    var cusTel = $("#inputTel1").val();
     
-    let customer = new CustomerModel(id,name,address,tel);
+    let customer = new CustomerModel(cusId,cusName,cusAddress,cusTel);
     
     customers.push(customer);
     loadTableCustomer();

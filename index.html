@@ -271,10 +271,10 @@
                             <form class="row g-3">
                                 <div class="row g-3">
                                     <div class="col">
-                                        <input type="text" class="form-control"  id="customer-id" placeholder="Cus ID" aria-label="First name">
+                                        <input type="text" class="form-control"  placeholder="Cus ID" aria-label="First name">
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control first-name" id="customer-name" placeholder="First name" aria-label="First name">
+                                        <input type="text" class="form-control first-name" placeholder="First name" aria-label="First name">
                                     </div>
                                     <div class="col-12">
                                         <input type="text" class="form-control inputAddress" id="inputAddress" placeholder="1234 Main St">
@@ -287,7 +287,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary btn-edit" id="btn-save">Save</button>
+                            <button type="button" class="btn btn-primary btn-edit">Save</button>
                         </div>
                     </div>
                 </div>
@@ -307,13 +307,10 @@
                             <form class="row g-3">
                                 <div class="row g-3">
                                     <div class="col">
-                                        <input type="text" class="form-control id"  placeholder="Cus ID" aria-label="First name">
+                                        <input type="text" class="form-control id" id="customer-id" placeholder="Cus ID" aria-label="First name">
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control first-name"  placeholder="First name" aria-label="First name">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control last-name"  placeholder="Last name" aria-label="Last name">
+                                        <input type="text" class="form-control first-name" id="customer-name" placeholder="First name" aria-label="First name">
                                     </div>
                                     <div class="col-12">
                                         <input type="text" class="form-control inputAddress" id="inputAddress1" placeholder="1234 Main St">
@@ -326,7 +323,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary btn-save">Save</button>
+                            <button type="button" class="btn btn-primary btn-save" id="btn-save">Save</button>
                         </div>
                     </div>
                 </div>
@@ -744,6 +741,7 @@
 <!--Jquery-->
 <script src="assets/lib/jquery-3.7.1.min.js"></script>
 <script src="js/script.js"></script>
+<script type="module" src="controller/Customer.js"></script>
 <!--Font-Awesome Js-->
 <script src="assets/fontawesome-free-6.5.1-web/js/all.min.js"></script>
 <!--Bootstrap Js-->

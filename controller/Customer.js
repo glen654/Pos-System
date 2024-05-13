@@ -1,7 +1,7 @@
 import CustomerModel from "../model/CustomerModel.js";
-import {customers} from "../db/db.js";
+/*import {customers} from "../db/db.js"*/
 
-
+var customers = [];
 function loadTableCustomer(){
     $("#customer-table").empty();
     

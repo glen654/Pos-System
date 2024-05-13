@@ -1,4 +1,5 @@
-import {credentials} from "../db/db.js";
+/*import {credentials} from "../db/db.js";*/
+var credentials = ["glen","1234"];
 
 $("#login").css({display:'block'});
 $("#dashboard-section").css({display: 'none'});

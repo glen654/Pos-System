@@ -299,12 +299,12 @@ input,input::-webkit-input-placeholder{
     background-color: #f39c12;
 }
 
-.id{
+/*.id{
     width: 100px;
     position: absolute;
     top: 30px;
     left: 5px;
-}
+}*/
 
 @media all and (min-width: 1024px) and (max-width: 1440px){
     main{

@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="52ca3129-0221-4909-9947-89294bdd92c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style-one.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style-one.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/controller/Customer.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/db/db.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/js/script.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/model/CustomerModel.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -136,7 +138,7 @@
       <workItem from="1715346338020" duration="10238000" />
       <workItem from="1715529296236" duration="1507000" />
       <workItem from="1715530839385" duration="194000" />
-      <workItem from="1715578635360" duration="1614000" />
+      <workItem from="1715578635360" duration="2958000" />
     </task>
     <servers />
   </component>

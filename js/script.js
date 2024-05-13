@@ -1,3 +1,5 @@
+import {credentials} from "../db/db.js";
+
 $("#login").css({display:'block'});
 $("#dashboard-section").css({display: 'none'});
 $("#customer-section").css({display: 'none'});
@@ -5,8 +7,16 @@ $("#item-section").css({display: 'none'});
 $("#place-order-section").css({display: 'none'});
 
 $("#btn-signIn").on('click',() =>{
-    $("#login").css({display:'none'});
-    $("#dashboard-section").css({display: 'block'});
+    var username = $("#login-username").val();
+    var password = $("#login-password").val();
+    for(let i = 0; i <=credentials.length; i++){
+        if(credentials[0] === username && credentials[1] === password){
+            $("#login").css({display:'none'});
+            $("#dashboard-section").css({display: 'block'});
+        }else{
+            console.log("username or password is incorrect");
+        }
+    }
 });
 
 $(".btn-dashboard").on('click',() =>{

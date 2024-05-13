@@ -373,3 +373,95 @@
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+/*Login section*/
+
+#login-div>div>h2{
+    font-weight: bolder;
+    font-size: 35px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+#login-div>div>h5{
+    font-size: 25px;
+    color: gray;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+#login-section>form{
+    margin-top: 40px;
+}
+
+section>img{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 1100px;
+    height: 900px;
+    margin: 30px 0 0 40px;
+    border-radius: 10px;
+}
+
+#login-section{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 200px 220px 0 0;
+}
+
+#login-div{
+    width: 500px;
+    height: 800px;
+    border: 2px solid #9F70FD;
+    position: relative;
+    bottom: 130px;
+    left: 5px;
+    border-radius: 50px;
+}
+#login-username{
+    position: absolute;
+    top: 240px;
+    left: 35px;
+    width: 420px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#login-password{
+    width: 420px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 320px;
+    left: 35px;
+}
+
+input,input::-webkit-input-placeholder{
+    font-size: 15px;
+    color: gray;
+}
+
+.login-form:focus{
+    border-color: #008DDA;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    outline: 0 none;
+}
+
+#btn-signIn{
+    background-color: #9F70FD;
+    border: #9F70FD;
+    font-weight: bolder;
+    position: absolute;
+    top: 380px;
+    left: 35px;
+    width: 420px;
+}
+
+#btn-signIn:hover{
+    background-color: #9F70FD;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: #9F70FD;;
+}
+

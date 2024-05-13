@@ -18,8 +18,8 @@ function loadTableCustomer(){
 $("#btn-save").on('click',() =>{
     var cusId = $("#customer-id").val();
     var cusName = $("#customer-name").val();
-    var cusAddress = $("#inputAddress1").val();
-    var cusTel = $("#inputTel1").val();
+    var cusAddress = $("#customer-address").val();
+    var cusTel = $("#customer-tel").val();
     
     let customer = new CustomerModel(cusId,cusName,cusAddress,cusTel);
     

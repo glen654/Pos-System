@@ -14,7 +14,7 @@ $("#btn-signIn").on('click',() =>{
             $("#login").css({display:'none'});
             $("#dashboard-section").css({display: 'block'});
         }else{
-            console.log("username or password is incorrect");
+           window.alert("Username or Password in Incorrect");
         }
     }
 });

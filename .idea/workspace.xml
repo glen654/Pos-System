@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="52ca3129-0221-4909-9947-89294bdd92c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -146,6 +147,9 @@
       <workItem from="1715530839385" duration="194000" />
       <workItem from="1715578635360" duration="6574000" />
       <workItem from="1715607763592" duration="1054000" />
+      <workItem from="1715612922834" duration="4350000" />
+      <workItem from="1715663727161" duration="3872000" />
+      <workItem from="1716306467379" duration="287000" />
     </task>
     <servers />
   </component>

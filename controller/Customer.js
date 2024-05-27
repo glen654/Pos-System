@@ -22,12 +22,6 @@ $("#customer-btn-save").on('click',() =>{
     var cusName = $("#cus_name").val();
     var cusAddress = $("#cus_address").val();
     var cusTel = $("#cus_tel").val();
-
-
-    console.log(cusId);
-    console.log(cusName);
-    console.log(cusAddress);
-    console.log(cusTel);
     
     let customer = new CustomerModel(cusId,cusName,cusAddress,cusTel);
     
@@ -35,6 +29,7 @@ $("#customer-btn-save").on('click',() =>{
     loadTableCustomer();
 
     $("#customer-btn-reset").click();
+    
 });
 
 $("#customer-btn-update").on('click',() =>{
@@ -73,4 +68,5 @@ $("#customer-table").on('click','tr',function (){
     $("#cus_name").val(name);
     $("#cus_address").val(address);
     $("#cus_tel").val(tel);
+    
 });

@@ -256,25 +256,25 @@
         </div>
     </div>
     <div class="add">
-        <h3 id="customer-title">Customer Form</h3>
-        <div class="mb-3" id="customer-form">
+        <h3 class="form-title">Customer Form</h3>
+        <div class="mb-3 forms">
             <div class="col">
-                <input type="text" class="form-control"  placeholder="Cus ID" aria-label="First name">
+                <input type="text" class="form-control"  placeholder="Cus ID" id="cus_id" aria-label="First name">
             </div>
             <div class="col">
-                <input type="text" class="form-control first-name" placeholder="First name" aria-label="First name">
+                <input type="text" class="form-control first-name" placeholder="First name" id="cus_name" aria-label="First name">
             </div>
             <div class="col-12">
-                <input type="text" class="form-control inputAddress" id="inputAddress" placeholder="Address">
+                <input type="text" class="form-control inputAddress" id="cus_address" placeholder="Address">
             </div>
             <div class="col-12">
-                <input type="tel" class="form-control inputTel" id="inputTel" placeholder="Telephone">
+                <input type="tel" class="form-control inputTel" id="cus_tel" placeholder="Telephone">
             </div>
-            <div id="btn-div">
-                <button class="customer-btn" id="customer-btn-save">Save</button>
-                <button class="customer-btn" id="customer-btn-update">Update</button>
-                <button class="customer-btn" id="customer-btn-delete">Delete</button>
-                <button class="customer-btn" id="customer-btn-reset">Reset</button>
+            <div class="btn-div">
+                <button class="form-btn f-btn-save" id="customer-btn-save">Save</button>
+                <button class="form-btn f-btn-update" id="customer-btn-update">Update</button>
+                <button class="form-btn f-btn-delete" id="customer-btn-delete">Delete</button>
+                <button class="form-btn f-btn-reset" id="customer-btn-reset">Reset</button>
             </div>
 
         </div>
@@ -380,80 +380,25 @@
         </div>
     </div>
     <div class="add">
-        <div class="mb-3">
-            <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Enter Item Code">
-            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <i class="fa-solid fa-magnifying-glass-plus fa-lg" style="color: #ffffff;"></i>
-                Search
-            </button>
-
-            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel2">Item Form</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="row g-3">
-                                <div class="row g-3">
-                                    <div class="col">
-                                        <input type="text" class="form-control first-name"  placeholder="Item Code" aria-label="First name">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control last-name"  placeholder="Item Name" aria-label="Last name">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control inputAddress" id="inputAddress2" placeholder="QtyOnHand">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control inputTel" id="inputTel2" placeholder="UnitPrice">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary btn-edit">Edit</button>
-                        </div>
-                    </div>
-                </div>
+        <h3 class="form-title">Item Form</h3>
+        <div class="mb-3 forms">
+            <div class="col">
+                <input type="text" class="form-control"  placeholder="Item Code" aria-label="First name">
             </div>
-            <button type="button" class="btn btn-success btn-lg btn-add"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <i class="fa-solid fa-circle-plus fa-lg" style="color: #ffffff;"></i>
-                Add
-            </button>
-
-            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel3">Item Form</h1>
-                        </div>
-                        <div class="modal-body">
-                            <form class="row g-3">
-                                <div class="row g-3">
-                                    <div class="col">
-                                        <input type="text" class="form-control first-name"  placeholder="Item Code" aria-label="First name">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control last-name"  placeholder="Item Name" aria-label="Last name">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control inputAddress" id="inputAddress3" placeholder="QtyOnHand">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control inputTel" id="inputTel3" placeholder="UnitPrice">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary btn-save" id="btn-item-save">Save</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="col">
+                <input type="text" class="form-control first-name" placeholder="Item Name" aria-label="First name">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control inputAddress"  placeholder="QtyOnHand">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control inputTel" placeholder="Unit Price">
+            </div>
+            <div class="btn-div">
+                <button class="form-btn f-btn-save" id="item-btn-save">Save</button>
+                <button class="form-btn f-btn-update" id="item-btn-update">Update</button>
+                <button class="form-btn f-btn-delete" id="item-btn-delete">Delete</button>
+                <button class="form-btn f-btn-reset" id="item-btn-reset">Reset</button>
             </div>
         </div>
     </div>

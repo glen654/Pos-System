@@ -323,13 +323,13 @@
     background-color: #27ae60;
 }
 
-#customer-title{
+.form-title{
     position: absolute;
     top: 5px;
     left: 30px;
 }
 
-#customer-form{
+.forms{
     position: absolute;
     top: 30px;
     width: 300px;
@@ -387,7 +387,7 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-#btn-div{
+.btn-div{
     position: absolute;
     width: 700px;
     height: 100px;
@@ -396,7 +396,7 @@
 }
 
 
-.customer-btn{
+.form-btn{
     width: 100px;
     height: 50px;
     border-radius: 10px;
@@ -406,41 +406,41 @@
     transition: background-color 0.5s;
 }
 
-#customer-btn-save{
+.f-btn-save{
     border: 2px solid #27ae60;
 }
 
-#customer-btn-update{
+.f-btn-update{
     border: 2px solid #f39c12;
 }
 
-#customer-btn-delete{
+.f-btn-delete{
     border: 2px solid #e74c3c;
 }
 
-#customer-btn-reset{
+.f-btn-reset{
     border: 2px solid #3498db;
 }
 
-#customer-btn-save:hover{
+.f-btn-save:hover{
     background-color: #27ae60;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#customer-btn-update:hover{
+.f-btn-update:hover{
     background-color: #f39c12;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#customer-btn-delete:hover{
+.f-btn-delete:hover{
     background-color: #e74c3c;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#customer-btn-reset:hover{
+.f-btn-reset:hover{
     background-color: #3498db;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

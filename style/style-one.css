@@ -323,33 +323,46 @@
     background-color: #27ae60;
 }
 
-#customer-id{
-    width: 230px;
+#customer-title{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#customer-form{
     position: absolute;
     top: 30px;
-    left: 3px;
+    width: 300px;
+    height: 300px;
+}
+
+#customer-id{
+    width: 100px;
+    position: relative;
+    top: 50px;
+    left: 2px;
 }
 
 .first-name{
     width: 470px;
     position: absolute;
     top: 80px;
-    left: 10px;
+    left: 30px;
 }
 
 
 .inputAddress{
     width: 470px;
     position: absolute;
-    top: 150px;
-    left: 10px;
+    top: 130px;
+    left: 30px;
 }
 
 .inputTel{
     width: 470px;
     position: absolute;
-    top: 200px;
-    left: 10px;
+    top: 180px;
+    left: 30px;
 }
 
 #table-div-dash{
@@ -372,6 +385,20 @@
     width: 800px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#btn-div{
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.customer-btn{
+    width: 100px;
+    height: 50px;
 }
 
 /*Login section*/

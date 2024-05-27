@@ -256,79 +256,25 @@
         </div>
     </div>
     <div class="add">
-        <div class="mb-3">
-            <input type="text" class="form-control form-control-lg" id="formGroupExampleInput1" placeholder="Enter Customer ID">
-            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                <i class="fa-solid fa-magnifying-glass-plus fa-lg" style="color: #ffffff;"></i>
-                Search
-            </button>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Customer Form</h1>
-                        </div>
-                        <div class="modal-body">
-                            <form class="row g-3">
-                                <div class="row g-3">
-                                    <div class="col">
-                                        <input type="text" class="form-control"  placeholder="Cus ID" aria-label="First name">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control first-name" placeholder="First name" aria-label="First name">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control inputAddress" id="inputAddress" placeholder="1234 Main St">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="tel" class="form-control inputTel" id="inputTel" placeholder="07xxxxxxx">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary btn-edit">Save</button>
-                        </div>
-                    </div>
-                </div>
+        <h3 id="customer-title">Customer Form</h3>
+        <div class="mb-3" id="customer-form">
+            <div class="col">
+                <input type="text" class="form-control"  placeholder="Cus ID" aria-label="First name">
             </div>
-            <button type="button" class="btn btn-success btn-lg btn-add"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <i class="fa-solid fa-circle-plus fa-lg" style="color: #ffffff;"></i>
-                Add
-            </button>
-
-            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel1">Customer Form</h1>
-                        </div>
-                        <div class="modal-body">
-                            <form class="row g-3">
-                                <div class="row g-3">
-                                    <div class="col">
-                                        <input type="text" class="form-control id" id="customer-id" placeholder="Cus ID" aria-label="First name">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control first-name" id="customer-name" placeholder="Name" aria-label="First name">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control inputAddress" id="customer-address" placeholder="1234 Main St">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="tel" class="form-control inputTel" id="customer-tel" placeholder="07xxxxxxx">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger btn-close" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary btn-save" id="btn-customer-save">Save</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="col">
+                <input type="text" class="form-control first-name" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control inputAddress" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <input type="tel" class="form-control inputTel" id="inputTel" placeholder="07xxxxxxx">
+            </div>
+            <div id="btn-div">
+                <button type="button" class="btn btn-primary customer-btn" id="btn-customer-save">Save</button>
+                <button type="button" class="btn btn-danger customer-btn">Update</button>
+                <button type="button" class="btn btn-danger customer-btn">Delete</button>
+                <button type="button" class="btn btn-danger customer-btn">Reset</button>
             </div>
         </div>
     </div>

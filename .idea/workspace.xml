@@ -69,19 +69,6 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Pos-System" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Pos-System" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Customer.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/controller/Customer.js" working-dir="$PROJECT_DIR$/controller">
       <method v="2" />
     </configuration>
@@ -147,6 +134,7 @@
       <workItem from="1715663727161" duration="3872000" />
       <workItem from="1716306467379" duration="287000" />
       <workItem from="1716530325616" duration="60000" />
+      <workItem from="1716530481926" duration="83000" />
     </task>
     <servers />
   </component>

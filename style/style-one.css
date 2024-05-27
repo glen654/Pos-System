@@ -389,9 +389,10 @@
 
 #btn-div{
     position: absolute;
-    width: 300px;
+    width: 500px;
     height: 170px;
     bottom: 5px;
+    left: 5px;
     display: flex;
     justify-content: space-around;
 }

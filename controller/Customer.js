@@ -54,6 +54,12 @@ $("#customer-btn-update").on('click',() =>{
     $("#customer-btn-reset").click();
 });
 
+$("#customer-btn-delete").on('click',() =>{
+    customers.splice(recordIndex,1);
+    loadTableCustomer();
+    $("#customer-btn-reset").click();
+});
+
 $("#customer-table").on('click','tr',function (){
     let index = $(this).index();
     recordIndex = index;

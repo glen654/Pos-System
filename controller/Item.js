@@ -25,4 +25,5 @@ $("#item-btn-save").on('click',() => {
 
     items.push(item);
     loadTableItem();
+    $("#item-btn-reset").click();
 });

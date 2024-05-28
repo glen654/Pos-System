@@ -22,6 +22,13 @@ $("#customer-btn-save").on('click',() =>{
     var cusName = $("#cus_name").val();
     var cusAddress = $("#cus_address").val();
     var cusTel = $("#cus_tel").val();
+
+    let isDuplicate = customers.some(customer => customer.cusId === cusId);
+
+    if(isDuplicate){
+        alert('Customer ID Already Exists. Please Try another one');
+        return;
+    }
     
     let customer = new CustomerModel(cusId,cusName,cusAddress,cusTel);
     

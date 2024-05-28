@@ -1,6 +1,7 @@
 import ItemModel from "../model/ItemModel.js";
 import {items} from "../db/db.js"
 
+var recordIndex;
 
 function loadTableItem(){
     $("#table-item").empty();
@@ -36,7 +37,32 @@ $("#item-btn-save").on('click',() => {
     reset();
 });
 
+$("#item-btn-update").on('click',() =>{
+    var itemCode = $("#item_code").val();
+    var itemName = $("#item_name").val();
+    var itemQty = $("#item_qty").val();
+    var itemPrice = $("#item_price").val();
 
+
+
+});
+
+$("#table-item").on('click','tr',function (){
+    let index = $(this).index();
+    recordIndex = index;
+
+    let itemCode = $(this).find(".item-code-value").text();
+    let itemName = $(this).find(".item-name-value").text();
+    let itemQty = $(this).find(".item-qty-value").text();
+    let itemPrice = $(this).find(".item-price-value").text();
+
+
+    $("#item_code").val(itemCode);
+    $("#item_name").val(itemName);
+    $("#item_qty").val(itemQty);
+    $("#item_price").val(itemPrice);
+
+});
 
 function reset(){
     $("#item_code").val('');

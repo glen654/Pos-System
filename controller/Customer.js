@@ -28,7 +28,7 @@ $("#customer-btn-save").on('click',() =>{
     customers.push(customer);
     loadTableCustomer();
 
-    $("#customer-btn-reset").click();
+    reset();
     
 });
 
@@ -46,13 +46,14 @@ $("#customer-btn-update").on('click',() =>{
     cusObject.cusTel = cusTel;
     
     loadTableCustomer();
-    $("#customer-btn-reset").click();
+    reset();
+  
 });
 
 $("#customer-btn-delete").on('click',() =>{
     customers.splice(recordIndex,1);
     loadTableCustomer();
-    $("#customer-btn-reset").click();
+    reset();
 });
 
 $("#customer-table").on('click','tr',function (){
@@ -70,3 +71,10 @@ $("#customer-table").on('click','tr',function (){
     $("#cus_tel").val(tel);
     
 });
+
+function reset(){
+    $('#cus_id').val('');
+    $('#cus_name').val('');
+    $('#cus_address').val('');
+    $('#cus_tel').val('');
+}

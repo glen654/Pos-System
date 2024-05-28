@@ -418,9 +418,6 @@
     border: 2px solid #e74c3c;
 }
 
-.f-btn-reset{
-    border: 2px solid #3498db;
-}
 
 .f-btn-save:hover{
     background-color: #27ae60;
@@ -440,11 +437,6 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.f-btn-reset:hover{
-    background-color: #3498db;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
 
 /*Login section*/
 

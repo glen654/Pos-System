@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/PlaceOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/PlaceOrder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style-one.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style-one.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,7 @@
       <workItem from="1716794696867" duration="31000" />
       <workItem from="1716816531353" duration="8691000" />
       <workItem from="1716870344689" duration="7974000" />
-      <workItem from="1716904223918" duration="4269000" />
+      <workItem from="1716904223918" duration="5888000" />
     </task>
     <servers />
   </component>

@@ -50,14 +50,10 @@ $("#customer-btn-update").on('click',() =>{
     console.log(cusAddress);
     console.log(cusTel);
 
-    let cusObject = {...customers[recordIndex]};
+
+    customers[recordIndex] = new CustomerModel(cusId,cusName,cusAddress,cusTel);
     
-    cusObject.cusId = cusId;
-    cusObject.cusName = cusName;
-    cusObject.cusAddress = cusAddress;
-    cusObject.cusTel = cusTel;
-    
-    loadTableCustomer();
+    loadTableCustomer(customers);
     reset();
   
 });

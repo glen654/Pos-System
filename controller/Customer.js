@@ -57,7 +57,7 @@ $("#customer-btn-update").on('click',() =>{
     reset();
   
 });
-
+200
 $("#customer-btn-delete").on('click',() =>{
     customers.splice(recordIndex,1);
     loadTableCustomer();

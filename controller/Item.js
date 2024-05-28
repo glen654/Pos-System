@@ -55,6 +55,13 @@ $("#item-btn-update").on('click',() =>{
 
 });
 
+$("#item-btn-delete").on('click',() =>{
+    items.splice(recordIndex,1);
+    loadTableItem();
+    reset();
+
+});
+
 $("#table-item").on('click','tr',function (){
     let index = $(this).index();
     recordIndex = index;

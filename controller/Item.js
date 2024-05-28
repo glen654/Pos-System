@@ -43,14 +43,11 @@ $("#item-btn-update").on('click',() =>{
     var itemQty = $("#item_qty").val();
     var itemPrice = $("#item_price").val();
 
-    let itemObj = {...items[recordIndex]};
 
-    itemObj.itemCode = itemCode;
-    itemObj.itemName = itemName;
-    itemObj.itemQty = itemQty;
-    itemObj.itemPrice = itemPrice;
+    items[recordIndex] = new ItemModel(itemCode,itemName,itemQty,itemPrice);
 
-    loadTableItem();
+
+    loadTableItem(items);
     reset();
 
 });

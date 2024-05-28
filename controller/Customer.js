@@ -44,7 +44,12 @@ $("#customer-btn-update").on('click',() =>{
     var cusName = $("#cus_name").val();
     var cusAddress = $("#cus_address").val();
     var cusTel = $("#cus_tel").val();
-    
+
+    console.log(cusId);
+    console.log(cusName);
+    console.log(cusAddress);
+    console.log(cusTel);
+
     let cusObject = {...customers[recordIndex]};
     
     cusObject.cusId = cusId;

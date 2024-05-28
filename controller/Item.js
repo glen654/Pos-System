@@ -21,9 +21,26 @@ $("#item-btn-save").on('click',() => {
     var itemQty = $("#item_qty").val();
     var itemPrice = $("#item_price").val();
 
+    let isDuplicate = items.some(item => item.itemCode === itemCode);
+
+    if(isDuplicate){
+        alert("Item Code Already Exists. Try a Different Item Code");
+        return;
+    }
+
     let item = new ItemModel(itemCode,itemName,itemQty,itemPrice);
 
     items.push(item);
     loadTableItem();
-    $("#item-btn-reset").click();
+
+    reset();
 });
+
+
+
+function reset(){
+    $("#item_code").val('');
+    $("#item_name").val('');
+    $("#item_qty").val('');
+    $("#item_price").val('');
+}

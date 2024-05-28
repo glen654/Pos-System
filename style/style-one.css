@@ -30,11 +30,11 @@
     position: relative;
 }
 
-#btn-order-add{
+/*#btn-order-add{
     position: absolute;
     bottom: 30px;
     right: 40px;
-}
+}*/
 
 #btn-order-add:hover{
     background-color: #e74c3c;
@@ -530,3 +530,20 @@ input,input::-webkit-input-placeholder{
     border: #9F70FD;;
 }
 
+
+/*Place order*/
+
+#btn-order-add{
+    position: absolute;
+    top: 400px;
+    left: 220px;
+    margin: auto;
+}
+
+
+#btn-purchase{
+    position: absolute;
+    top: 400px;
+    left: 220px;
+    margin: auto;
+}

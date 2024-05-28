@@ -11,6 +11,9 @@ function generateOrderId(){
 
 
 function loadCustomerIds(){
-
+    customers.forEach(customer => {
+        $("#inputState").append(new Option(customer.cusId, customer.cusId));
+    });
 }
+
 

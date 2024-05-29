@@ -1,7 +1,5 @@
 import PlaceOrderModel from "../model/PlaceOrderModel.js";
-import {orders} from "../db/db.js";
-import {customers} from "../db/db.js";
-import {items} from "../db/db.js";
+import {orders,customers,items} from "../db/db.js";
 
 
 function generateOrderId(){
@@ -17,3 +15,5 @@ function loadCustomerIds(){
 }
 
 
+generateOrderId();
+loadCustomerIds();

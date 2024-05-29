@@ -25,7 +25,8 @@ export default class PlaceOrder{
         return this._date;
     }
 
-    get qty(){
+    get qty(){generateOrderId();
+loadCustomerIds();
         return this._qty;
     }
 

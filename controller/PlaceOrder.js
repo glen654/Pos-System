@@ -1,7 +1,8 @@
-import PlaceOrderModel from "../model/PlaceOrderModel.js";
+import PlaceOrder from "../model/PlaceOrderModel.js";
 import CustomerModel from "../model/CustomerModel.js";
 import {orders,customers,items} from "../db/db.js";
 
+let currentOrderId = 1;
 
 $(document).ready(()=>{
     generateOrderId();
@@ -9,16 +10,18 @@ $(document).ready(()=>{
 
 
     function generateOrderId(){
-        const orderId = 'OR' + Date.now();
-        $("#order-label").val(orderId);
+        const orderId = 'P' + currentOrderId.toString().padStart(3,'0');
+        $("#order-input").val(orderId);
+        currentOrderId++;
     }
 
 
     function loadCustomerIds(){
         customers.forEach(customer => {
-            $("#inputState").append(new Option(customer.cusId, customer.cusId));
+            $("#inputState").append(new Option(customer.cusId));
         });
     }
+
 
     $("#inputState").on('change',function (){
         const selectedCustomerId = $(this).val();

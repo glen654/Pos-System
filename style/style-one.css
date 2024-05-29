@@ -548,3 +548,13 @@ input,input::-webkit-input-placeholder{
     left: 220px;
     margin: auto;
 }
+
+#customer-dropdown{
+    width: 420px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+}

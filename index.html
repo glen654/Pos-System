@@ -257,26 +257,32 @@
     </div>
     <div class="add">
         <h3 class="form-title">Customer Form</h3>
-        <div class="mb-3 forms ">
-            <div class="col">
-                <input type="text" class="form-control id"  placeholder="Cus ID" id="cus_id" aria-label="First name" required>
-            </div>
-            <div class="col">
-                <input type="text" class="form-control first-name" placeholder="First name" id="cus_name" aria-label="First name" required>
-            </div>
-            <div class="col-12">
-                <input type="text" class="form-control inputAddress" id="cus_address" placeholder="Address" required>
-            </div>
-            <div class="col-12">
-                <input type="tel" class="form-control inputTel" id="cus_tel" placeholder="Telephone" required>
-            </div>
-            <div class="btn-div">
-                <button class="form-btn f-btn-save" id="customer-btn-save">Save</button>
-                <button class="form-btn f-btn-update" id="customer-btn-update">Update</button>
-                <button class="form-btn f-btn-delete" id="customer-btn-delete">Delete</button>
-            </div>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="mb-3 forms ">
+                <div class="col-md-4">
+                    <input type="text" class="form-control id"  placeholder="Cus ID" id="cus_id" aria-label="First name"  required>
+                    <div class="valid-feedback">
+                        Looks good
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control first-name" placeholder="First name" id="cus_name" aria-label="First name" required>
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control inputAddress" id="cus_address" placeholder="Address" required>
+                </div>
+                <div class="col-12">
+                    <input type="tel" class="form-control inputTel" id="cus_tel" placeholder="Telephone" required>
+                </div>
+                <div class="btn-div">
+                    <button class="form-btn f-btn-save" id="customer-btn-save">Save</button>
+                    <button class="form-btn f-btn-update" id="customer-btn-update">Update</button>
+                    <button class="form-btn f-btn-delete" id="customer-btn-delete">Delete</button>
+                </div>
 
-        </div>
+            </div>
+        </form>
+
     </div>
     <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -511,13 +517,15 @@
                 <input type="date" class="form-control" placeholder="" aria-label="Last name" id="date-input">
             </div>
         </div>
-        <div class="col-md-4">
+       <!-- <div class="col-md-4">
             <label for="inputState" class="form-label" id="customer-label">Customer</label>
             <select id="inputState" class="form-select">
 
-
             </select>
-        </div>
+        </div>-->
+        <select class="form-select" aria-label="Default select example" id="customer-dropdown">
+
+        </select>
         <div class="col">
             <label for="inputState" class="form-label" id="name-label">Customer Name</label>
             <input type="text" class="form-control" placeholder="" aria-label="First name" id="name-input">

@@ -17,9 +17,16 @@ $(document).ready(()=>{
 
 
     function loadCustomerIds(){
+        console.log("loading customer IDs");
+        console.log('Customers: ', customers);
+
+        $("#customer-dropdown").empty();
+
         customers.forEach(customer => {
-            $("#inputState").append(new Option(customer.cusId));
+            console.log(`Adding Customer IDs: ${customer.cusId}`);
+            $("#customer-dropdown").append(new Option(customer.cusId,customer.cusId));
         });
+
     }
 
 

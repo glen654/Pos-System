@@ -238,4 +238,141 @@ h4{
 }
 
 
+/*Dashboard*/
 
+#dashboard-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+#chart{
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 260px;
+    left: 310px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#table-div{
+    width: 800px;
+    background-color: white;
+    height: 300px;
+    position: absolute;
+    left: 310px;
+    bottom: 20px;
+    border-radius: 10px;
+}
+
+.table{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#table-div>h4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+}
+
+#table-div>table>thead>tr>th{
+    color: #AAA69D;
+}
+
+#categories{
+    width: 700px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#categories>h4{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: black;
+    font-size: medium;
+}
+
+#categories>div{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-top: 45px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#categories>div>img{
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#categories>div>h5{
+    position: absolute;
+    left: 60px;
+    font-size: small;
+    top: 5px;
+}
+
+#categories>div>h6{
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    font-size: small;
+}
+
+#categories>div>p{
+    position: absolute;
+    left: 135px;
+    top: 23px;
+    font-size: small;
+    font-weight: bold;
+    color:  #AAA69D;
+}
+
+#arrow-image1{
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+#arrow-image2{
+    position: absolute;
+    right: 40px;
+    top: 150px;
+}
+
+#arrow-image3{
+    position: absolute;
+    right: 40px;
+    top: 250px;
+}
+
+.bi-list{
+    display: none;
+}

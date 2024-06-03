@@ -1,3 +1,37 @@
+/*Section*/
+
+#dashboard-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+#customer-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+#item-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+#place-order-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
 /*Navigation*/
 
 .nav-bar{
@@ -240,13 +274,7 @@ h4{
 
 /*Dashboard*/
 
-#dashboard-section{
-    width: 100vw;
-    height: 100vh;
-    background-color: #ECF0F1;
-    overflow: hidden;
-    position: relative;
-}
+
 
 #chart{
     background-color: white;
@@ -379,12 +407,6 @@ h4{
 
 /*Customer Section*/
 
-#customer-section{
-    width: 100vw;
-    height: 100vh;
-    background-color: #ECF0F1;
-    overflow: hidden;
-    position: relative;
-}
+
 
 

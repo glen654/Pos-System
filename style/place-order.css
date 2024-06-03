@@ -145,6 +145,30 @@ h4{
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+#btn-order-add{
+    position: absolute;
+    top: 400px;
+    left: 220px;
+    margin: auto;
+}
+
+
+#btn-purchase{
+    position: absolute;
+    top: 400px;
+    left: 220px;
+    margin: auto;
+}
+
+#customer-dropdown{
+    width: 420px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+}
 
 #add3{
     background-color: white;

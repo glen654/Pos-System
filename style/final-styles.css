@@ -603,6 +603,288 @@ input,input::-webkit-input-placeholder{
     left: 20px;
 }
 
+#table-div-order{
+    width: 1555px;
+    background-color: white;
+    height: 300px;
+    position: absolute;
+    left: 310px;
+    bottom: -90px;
+    border-radius: 10px;
+}
+
+#order-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+#order-label{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+#date-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 60px;
+    left: 240px;
+}
+
+#date-label{
+    position: absolute;
+    top: 30px;
+    left: 245px;
+    color: #AAA69D;
+}
+
+#inputState{
+    width: 420px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+}
+
+#customer-label{
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+#id-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 140px;
+    left: 240px;
+}
+
+#id-label{
+    position: absolute;
+    top: 110px;
+    left: 245px;
+    color: #AAA69D;
+}
+
+#name-input{
+    width: 420px;
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 240px;
+    left: 20px;
+}
+
+#name-label{
+    position: absolute;
+    top: 210px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+
+#address-input{
+    width: 420px;
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 320px;
+    left: 20px;
+}
+
+#address-label{
+    position: absolute;
+    top: 295px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+#inputState2{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+#item-label{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+#item-id-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 60px;
+    left: 240px;
+}
+
+#item-id-label{
+    position: absolute;
+    top: 30px;
+    left: 245px;
+    color: #AAA69D;
+}
+
+#item-name-input{
+    width: 420px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+}
+
+#item-name-label{
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+#price-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 240px;
+    left: 20px;
+}
+
+#price-label{
+    position: absolute;
+    top: 215px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+#qty-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+#qty-label{
+    position: absolute;
+    top: 215px;
+    left: 240px;
+    color: #AAA69D;
+}
+
+#order-qty-input{
+    width: 420px;
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 320px;
+    left: 20px;
+}
+
+#order-qty-label{
+    position: absolute;
+    top: 290px;
+    left: 20px;
+    color: #AAA69D;
+}
+
+#total{
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    color: #e74c3c;
+}
+
+#sub-total{
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    color: #3498db;
+}
+
+#cash-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 250px;
+    left: 20px;
+}
+
+#cash-label{
+    position: absolute;
+    top: 220px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+#discount-input{
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 250px;
+    left: 240px;
+}
+
+#discount-label{
+    position: absolute;
+    top: 220px;
+    left: 240px;
+    color: #AAA69D;
+}
+
+#balance-input{
+    width: 420px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 340px;
+    left: 20px;
+}
+
+#balance-label{
+    position: absolute;
+    top: 310px;
+    left: 25px;
+    color: #AAA69D;
+}
+
+
+
 
 
 

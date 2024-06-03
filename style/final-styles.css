@@ -405,7 +405,132 @@ h4{
     display: none;
 }
 
-/*Customer Section*/
+/*Customer Section and Item section and Place Order section*/
+
+.add{
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 260px;
+    left: 310px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.table-div{
+    width: 1555px;
+    background-color: white;
+    height: 300px;
+    position: absolute;
+    left: 310px;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
+.table{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    margin: auto;
+    width: 1555px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.table-div>h4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+}
+
+.table-div>table>thead>tr>th{
+    color: #AAA69D;
+}
+
+.form-title{
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+
+.forms{
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+.id{
+    width: 470px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.first-name{
+    width: 470px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+}
+
+
+.inputAddress{
+    width: 470px;
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}
+
+.inputTel{
+    width: 470px;
+    position: absolute;
+    top: 180px;
+    left: 30px;
+}
+
+.btn-div{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    top: 240px;
+    left: 30px;
+}
+
+.f-btn-save{
+    border: 2px solid #27ae60;
+}
+
+.f-btn-update{
+    border: 2px solid #f39c12;
+}
+
+.f-btn-delete{
+    border: 2px solid #e74c3c;
+}
+
+
+.f-btn-save:hover{
+    background-color: #27ae60;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.f-btn-update:hover{
+    background-color: #f39c12;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.f-btn-delete:hover{
+    background-color: #e74c3c;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 
 

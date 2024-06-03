@@ -1,0 +1,210 @@
+/*Navigation*/
+
+.nav-bar{
+    width: 15vw;
+    height: 95vh;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-top: 20px;
+}
+
+.nav-links>span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 15px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-links>span:hover{
+    color: white;
+    transition-duration: 1s;
+}
+
+.nav-bar>h3{
+    margin-left: 60px;
+}
+
+hr{
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+.dash-icon{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+#nav-bar>.nav-links:last-child{
+    margin-top: 340px;
+}
+
+.nav-links:hover{
+    background-color: #7F27FF;
+    color: white;
+    transition-duration: 1s;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*Top*/
+
+.top{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 30vh;
+    background-color: #686DE0;
+    margin-top: 0;
+}
+
+.user-image{
+    position: absolute;
+    right: 0;
+    margin-right: 180px;
+    bottom: 210px;
+    border-radius: 100%;
+    background-color: white;
+    width: 70px;
+    aspect-ratio: 1/1;
+}
+
+.user-image>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1{
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 320px;
+    top: 85px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card2{
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 730px;
+    top: 85px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card3{
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 1140px;
+    top: 85px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-image1{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    right: 10px;
+    top:10px;
+    background-color: #3498db;
+}
+
+.card-image2{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    right: 10px;
+    top:10px;
+    background-color: #e74c3c;
+}
+
+.card-image3{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    right: 10px;
+    top:10px;
+    background-color: #1abc9c;
+}
+
+.card-image1>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.card-image2>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.card-image3>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+}
+
+.card-number{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+
+h4{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*Dashboard*/
+

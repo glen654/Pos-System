@@ -376,3 +376,15 @@ h4{
 .bi-list{
     display: none;
 }
+
+/*Customer Section*/
+
+#customer-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    position: relative;
+}
+
+

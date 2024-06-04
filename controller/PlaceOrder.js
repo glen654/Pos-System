@@ -2,6 +2,8 @@ import PlaceOrder from "../model/PlaceOrderModel.js";
 import CustomerModel from "../model/CustomerModel.js";
 import {orders,customers,items} from "../db/db.js";
 
+console.log('Customers array after import:', customers);
+
 let currentOrderId = 1;
 
 /*$(document).ready(()=>{
@@ -107,7 +109,9 @@ $(document).ready(() => {
 
         $customerDropdown.append(defaultOption);
 
+
         customers.forEach(customer => {
+            console.log('Appending customer:', customer);
             const option = $('<option>', {
                 value: customer.cusId,
                 text: customer.cusId

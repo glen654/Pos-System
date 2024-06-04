@@ -86,7 +86,6 @@ let currentOrderId = 1;
 
 $(document).ready(() => {
     generateOrderId();
-    loadCustomerIds();
 
     function generateOrderId() {
         const orderId = 'P' + currentOrderId.toString().padStart(3,'0');
@@ -111,7 +110,6 @@ $(document).ready(() => {
 
 
         customers.forEach(customer => {
-            console.log('Appending customer:', customer);
             const option = $('<option>', {
                 value: customer.cusId,
                 text: customer.cusId
@@ -119,9 +117,11 @@ $(document).ready(() => {
             $customerDropdown.append(option);
         });
 
-
-        console.log('Dropdown options after appending:', $customerDropdown.html());
     }
+
+    $("#customer-dropdown").on('focus',()=>{
+        loadCustomerIds();
+    });
 
     $("#customer-dropdown").on('change', function() {
         const selectedCustomerId = $(this).val();

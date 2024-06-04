@@ -125,7 +125,6 @@ $(document).ready(() => {
 
     $("#customer-dropdown").on('change', function() {
         const selectedCustomerId = $(this).val();
-        console.log(`Selected Customer ID: ${selectedCustomerId}`);
         const selectedCustomer = customers.find(customer => customer.cusId === selectedCustomerId);
 
         if (selectedCustomer) {
@@ -162,6 +161,21 @@ $(document).ready(() => {
 
     $("#item-dropdown").on('focus',()=>{
         loadItemIds();
+    });
+
+    $("#item-dropdown").on('change', function() {
+        const selectedItemId = $(this).val();
+        const selectedItem = items.find(item => item.itemCode === selectedItemId);
+
+        if (selectedItem) {
+            $("#item-name-input").val(selectedItem.itemName);
+            $("#price-input").val(selectedItem.itemPrice);
+            $("#qty-input").val(selectedItem.itemQty);
+        } else {
+            $("#item-name-input").val('');
+            $("#price-input").val('');
+            $("#qty-input").val('');
+        }
     });
 
 });

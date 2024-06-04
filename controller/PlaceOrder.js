@@ -86,11 +86,23 @@ let currentOrderId = 1;
 
 $(document).ready(() => {
     generateOrderId();
+    setDate();
 
     function generateOrderId() {
         const orderId = 'P' + currentOrderId.toString().padStart(3,'0');
         $("#order-input").val(orderId);
         currentOrderId++;
+    }
+
+    function setDate(){
+        var now = new Date();
+
+        var day = ("0" + now.getDate()).slice(-2);
+        var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+        var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+        $('#date-input').val(today);
     }
 
     function loadCustomerIds() {

@@ -178,5 +178,9 @@ $(document).ready(() => {
         }
     });
 
+    $('#btn-order-add').on('click',() =>{
+
+    });
+
 });
 

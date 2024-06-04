@@ -138,5 +138,31 @@ $(document).ready(() => {
             $("#address-input").val('');
         }
     });
+
+    function loadItemIds(){
+        const $itemDropdown = $('#item-dropdown');
+
+        $itemDropdown.empty();
+
+        const defaultOption = $('<option>',{
+            text: 'Select Item ID',
+            value: ''
+        });
+
+        $itemDropdown.append(defaultOption);
+
+        items.forEach(item => {
+            const option = $('<option>',{
+                value: item.itemCode,
+                text: item.itemCode
+            });
+            $itemDropdown.append(option);
+        });
+    }
+
+    $("#item-dropdown").on('focus',()=>{
+        loadItemIds();
+    });
+
 });
 

@@ -190,9 +190,21 @@ $(document).ready(() => {
         }
     });
 
-    $('#btn-order-add').on('click',() =>{
+    function total(){
+        let price = +$("#price-input");
+        let qty = +$("#order-qty-input");
 
+        let total = price * qty;
+
+        $("#total-label").text(total);
+        $("#sub-total-label").text(total);
+    }
+
+    $('#btn-order-add').on('click',() =>{
+        total();
     });
+
+
 
 });
 

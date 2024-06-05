@@ -191,7 +191,7 @@ $(document).ready(() => {
     });
 
     function total(){
-        let price = +$("#price-input").val();
+        const price = +$("#price-input").val();
         let qty = +$("#order-qty-input").val();
 
         let total = price * qty;
@@ -204,9 +204,22 @@ $(document).ready(() => {
         total();
     });
 
+    function calculate(){
+        const cash = +$('#cash-label').val();
+        const discount = +$('#discount-label').val();
+        const total = +$('#total-label').text();
+
+        if(cash > total){
+            const price = cash - total + (total * discount / 100);
+            $('#balance-label').val(price);
+        }else {
+            const price = total - (total * discount / 100);
+            $('#balance-label').val(price);
+        }
+    }
 
     $('#btn-purchase').on('click',() => {
-
+        calculate();
     });
 
 });

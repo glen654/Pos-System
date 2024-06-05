@@ -209,25 +209,49 @@ $(document).ready(() => {
         const discount = +$('#discount-input').val();
         const total = +$('#total-label').text();
 
-        console.log(`Cash: ${cash}`);
-        console.log(`Discount: ${discount}`);
-        console.log(`Total: ${total}`);
 
         let balance;
 
         if(cash > total){
-             balance = cash - total + (total * discount / 100);
-            console.log(balance);
+            balance = cash - total + (total * discount / 100);
             $('#balance-input').val(balance);
         }else {
-             balance = total - (total * discount / 100);
-            console.log(balance)
+            balance = total - (total * discount / 100);
             $('#balance-input').val(balance);
         }
     }
 
+    function loadOrderTable(){
+        $('#place-order-table').empty();
+
+        orders.map((item,index) => {
+            var record = `<tr>
+                <td class="order-id-value">${item.orderId}</td>
+                <td class="item-code-value">${item.itemCode}</td>
+                <td class="customer-id-value">${item.customerId}</td>
+                <td class="date-value">${item.date}</td>
+                <td class="qty-value">${item.qty}</td>
+                <td class="price-value">${item.unitPrice}</td>
+                <td class="total-value">${item.total}</td>
+            <tr>`
+            $("#place-order-table").append(record);
+        });
+    }
+
     $('#btn-purchase').on('click',() => {
         calculate();
+
+        var orderId = $('#order-input').val();
+        var itemCode = $('#item-dropdown option:selected').val();
+        var customerId = $('#customer-dropdown option:selected').val();
+        var date = $('#date-input').val();
+        var qty = $('#order-qty-input').val();
+        var price = $('#price-input').val();
+        var total = $('#total-label').text();
+
+
+
+
     });
 
 });

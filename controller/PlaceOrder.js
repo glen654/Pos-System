@@ -191,8 +191,8 @@ $(document).ready(() => {
     });
 
     function total(){
-        let price = +$("#price-input");
-        let qty = +$("#order-qty-input");
+        let price = +$("#price-input").val();
+        let qty = +$("#order-qty-input").val();
 
         let total = price * qty;
 

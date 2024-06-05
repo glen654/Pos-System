@@ -250,9 +250,28 @@ $(document).ready(() => {
         var total = $('#total-label').text();
 
 
+        let order = new PlaceOrder(orderId,itemCode,customerId,date,qty,price,total);
 
+        orders.push(order);
+        loadOrderTable();
+        reset();
 
     });
+
+    function reset(){
+         $('#order-input').val('');
+         $('#name-input').val('');
+         $('#address-input').val('');
+         $('#item-name-input').val('');
+         $('#item-id-input').val('');
+         $('#item-dropdown').prop('selectedIndex',0);
+         $('#customer-dropdown').prop('selectedIndex',0);
+         $('#date-input').val('');
+         $('#qty-input').val('');
+         $('#order-qty-input').val('');
+         $('#price-input').val('');
+         $('#total-label').text('');
+    }
 
 });
 

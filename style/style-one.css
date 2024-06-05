@@ -563,3 +563,9 @@ input,input::-webkit-input-placeholder{
     top: 140px;
     left: 20px;
 }
+
+#total-label{
+    position: absolute;
+    top: 85px;
+    left: 140px;
+}

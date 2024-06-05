@@ -205,16 +205,24 @@ $(document).ready(() => {
     });
 
     function calculate(){
-        const cash = +$('#cash-label').val();
-        const discount = +$('#discount-label').val();
+        const cash = +$('#cash-input').val();
+        const discount = +$('#discount-input').val();
         const total = +$('#total-label').text();
 
+        console.log(`Cash: ${cash}`);
+        console.log(`Discount: ${discount}`);
+        console.log(`Total: ${total}`);
+
+        let balance;
+
         if(cash > total){
-            const price = cash - total + (total * discount / 100);
-            $('#balance-label').val(price);
+             balance = cash - total + (total * discount / 100);
+            console.log(balance);
+            $('#balance-input').val(balance);
         }else {
-            const price = total - (total * discount / 100);
-            $('#balance-label').val(price);
+             balance = total - (total * discount / 100);
+            console.log(balance)
+            $('#balance-input').val(balance);
         }
     }
 

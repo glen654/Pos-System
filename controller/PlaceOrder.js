@@ -205,6 +205,9 @@ $(document).ready(() => {
     });
 
 
+    $('#btn-purchase').on('click',() => {
+
+    });
 
 });
 

@@ -1,8 +1,6 @@
 import PlaceOrder from "../model/PlaceOrderModel.js";
-import CustomerModel from "../model/CustomerModel.js";
 import {orders,customers,items} from "../db/db.js";
 
-console.log('Customers array after import:', customers);
 
 let currentOrderId = 1;
 
@@ -28,9 +26,6 @@ $(document).ready(() => {
     }
 
     function loadCustomerIds() {
-        console.log('Loading customer IDs...');
-        console.log('Customers:', customers);
-
         const $customerDropdown = $('#customer-dropdown');
 
         $customerDropdown.empty();
@@ -62,11 +57,9 @@ $(document).ready(() => {
         const selectedCustomer = customers.find(customer => customer.cusId === selectedCustomerId);
 
         if (selectedCustomer) {
-            console.log(`Found Customer: ${selectedCustomer.cusName}, ${selectedCustomer.cusAddress}`);
             $("#name-input").val(selectedCustomer.cusName);
             $("#address-input").val(selectedCustomer.cusAddress);
         } else {
-            console.log('No customer found');
             $("#name-input").val('');
             $("#address-input").val('');
         }

@@ -270,6 +270,8 @@ $(document).ready(() => {
          $('#qty-input').val('');
          $('#order-qty-input').val('');
          $('#price-input').val('');
+         $('#cash-input').val('');
+         $('#discount-input').val('');
          $('#total-label').text('');
     }
 

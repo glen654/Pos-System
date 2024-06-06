@@ -78,13 +78,36 @@ $(".btn-signOut").on('click',() =>{
 
 
 function updateCount(){
-    $('.customer-count').text(customers.length);
-    $('.item-count').text(items.length);
-    $('.order-count').text(orders.length);
+    /*const customerCount = customers.length;
+    const itemCount = items.length;
+    const orderCount = orders.length;
+
+    $('.customer-count').text(customerCount);
+    $('.item-count').text(itemCount);
+    $('.order-count').text(orderCount);
 
     console.log('Customer count:', $('.customer-count').text());
     console.log('Item count:', $('.item-count').text());
-    console.log('Order count:', $('.order-count').text());
+    console.log('Order count:', $('.order-count').text());*/
+    let customerCount = 0;
+    let itemCount = 0;
+    let orderCount = 0;
+
+    for(let i = 0; i < customers.length; i++){
+        customerCount++;
+    }
+
+    for(let i = 0; i < items.length; i++){
+        itemCount++;
+    }
+
+    for(let i = 0; i < orders.length; i++){
+        orderCount++;
+    }
+
+    $('.customer-count').text(customerCount);
+    $('.items-count').text(itemCount);
+    $('.order-count').text(orderCount);
 }
 
 $(document).ready(() => {

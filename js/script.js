@@ -1,5 +1,4 @@
 import {credentials,customers,items,orders} from "../db/db.js";
-/*var credentials = ["glen","1234"];*/
 
 $("#login").css({display:'block'});
 $("#dashboard-section").css({display: 'none'});
@@ -108,6 +107,10 @@ function updateCount(){
     $('.customer-count').text(customerCount);
     $('.items-count').text(itemCount);
     $('.order-count').text(orderCount);
+
+    console.log('Customer count:', customerCount);
+    console.log('Item count:', itemCount);
+    console.log('Order count:', orderCount);
 }
 
 $(document).ready(() => {

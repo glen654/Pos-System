@@ -1,5 +1,5 @@
-/*import {credentials} from "../db/db.js";*/
-var credentials = ["glen","1234"];
+import {credentials,customers,items,orders} from "../db/db.js";
+/*var credentials = ["glen","1234"];*/
 
 $("#login").css({display:'block'});
 $("#dashboard-section").css({display: 'none'});
@@ -75,3 +75,18 @@ $(".btn-signOut").on('click',() =>{
         }, false)
     })
 })()
+
+
+function updateCount(){
+    $('.customer-count').text(customers.length);
+    $('.item-count').text(items.length);
+    $('.order-count').text(orders.length);
+
+    console.log('Customer count:', $('.customer-count').text());
+    console.log('Item count:', $('.item-count').text());
+    console.log('Order count:', $('.order-count').text());
+}
+
+$(document).ready(() => {
+    updateCount();
+});

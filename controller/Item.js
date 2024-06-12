@@ -33,7 +33,8 @@ $("#item-btn-save").on('click',() => {
 
     items.push(item);
     loadTableItem();
-
+    updateItemCount();
+    
     reset();
 });
 
@@ -81,4 +82,10 @@ function reset(){
     $("#item_name").val('');
     $("#item_qty").val('');
     $("#item_price").val('');
+}
+
+function updateItemCount(){
+    const itemCount = items.length;
+
+    $('.item-count').text(itemCount);
 }

@@ -34,7 +34,8 @@ $("#customer-btn-save").on('click',() =>{
     
     customers.push(customer);
     loadTableCustomer();
-
+    updateCustomerCount();
+    
     reset();
     
 });
@@ -57,7 +58,7 @@ $("#customer-btn-update").on('click',() =>{
     reset();
   
 });
-200
+
 $("#customer-btn-delete").on('click',() =>{
     customers.splice(recordIndex,1);
     loadTableCustomer();
@@ -85,4 +86,10 @@ function reset(){
     $('#cus_name').val('');
     $('#cus_address').val('');
     $('#cus_tel').val('');
+}
+
+function updateCustomerCount(){
+    const customerCount = customers.length;
+
+    $('.customer-count').text(customerCount);
 }

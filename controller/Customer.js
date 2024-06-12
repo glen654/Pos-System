@@ -18,6 +18,10 @@ function loadTableCustomer(){
 }
 
 $("#customer-btn-save").on('click',() =>{
+    if (!validateCustomer()) {
+        return;
+    }
+    
     var cusId = $("#cus_id").val();
     var cusName = $("#cus_name").val();
     var cusAddress = $("#cus_address").val();
@@ -92,4 +96,47 @@ function updateCustomerCount(){
     const customerCount = customers.length;
 
     $('.customer-count').text(customerCount);
+}
+
+
+function validateCustomer(){
+    const cusId =  $("#cus_id").val();
+
+    const isCusIdValidated = /[C][0-9]{3,}/;
+
+    if (!isCusIdValidated.test(cusId)) {
+        alert('Invalid Customer ID format. It should be in the format C000 where XXXX are digits.');
+        return false;
+    }
+
+    const cusName = $("#cus_name").val();
+
+    const isCusNameValidated = /[A-Z][a-zA-Z\s]+/;
+
+    if(!isCusNameValidated.test(cusName)){
+        alert('Invalid Customer Name format. It should be start with a capital letter.');
+        return false;
+    }
+
+    const cusAddress =  $("#cus_address").val();
+
+    const isCusAddressValidated = /[A-Z][a-zA-Z\s]+/;
+
+    if(!isCusAddressValidated.test(cusAddress)){
+        alert('Invalid Customer Address format. It should be start with a capital letter.');
+        return false;
+    }
+
+    const cusTel = $("#cus_tel").val();
+
+    const isCusTelValidated = /^0\d{9}$/;
+
+
+    if(!isCusTelValidated.test(cusTel)){
+        alert('Invalid Customer Telephone format.');
+        return false;
+    }
+
+    return true;
+    
 }

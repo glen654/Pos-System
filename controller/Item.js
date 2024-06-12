@@ -17,6 +17,10 @@ function loadTableItem(){
     });
 }
 $("#item-btn-save").on('click',() => {
+    if(!validateItem()){
+        return;
+    }
+    
     var itemCode = $("#item_code").val();
     var itemName = $("#item_name").val();
     var itemQty = $("#item_qty").val();
@@ -88,4 +92,44 @@ function updateItemCount(){
     const itemCount = items.length;
 
     $('.item-count').text(itemCount);
+}
+
+function validateItem(){
+    const itemCode = $("#item_code").val();
+
+    const isItemCodeValidated = /[I][0-9]{3,}/;
+
+    if (!isItemCodeValidated.test(itemCode)) {
+        alert('Invalid Item Code format. It should be in the format I000 where XXXX are digits.');
+        return false;
+    }
+
+    const itemName = $("#item_name").val();
+
+    const isItemNameValidated = /[A-Z][a-zA-Z\s]+/;
+
+    if (!isItemNameValidated.test(itemName)) {
+        alert('Invalid Item Name format. It should start with a capital letter.');
+        return false;
+    }
+
+    const itemQty = $("#item_qty").val();
+
+    const isItemQtyValidated = /^[1-9]\d*$/;
+
+    if (!isItemQtyValidated.test(itemQty)) {
+        alert('Invalid Item Qty. It should be a positive quantity.');
+        return false;
+    }
+
+    const itemPrice = $("#item_price").val();
+
+    const isItemPriceValidated = /^\d+(\.\d{1,2})?$/;
+
+    if (!isItemPriceValidated.test(itemPrice)) {
+        alert('Invalid Item Price. It should be a positive Price.');
+        return false;
+    }
+
+    return true;
 }

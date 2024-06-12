@@ -169,6 +169,8 @@ $(document).ready(() => {
 
         orders.push(order);
         loadOrderTable();
+        updateOrderCount();
+        
         reset();
 
     });
@@ -190,5 +192,10 @@ $(document).ready(() => {
          $('#total-label').text('');
     }
 
+    function updateOrderCount(){
+        const orderCount = orders.length;
+
+        $('.order-count').text(orderCount);
+    }
 });
 

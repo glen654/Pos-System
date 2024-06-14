@@ -698,7 +698,7 @@ hr{
 
     .top>h2{
         position: relative;
-        left: 50px;
+        left: 285px;
         top: 30px;
         font-weight: bold;
     }
@@ -906,6 +906,131 @@ hr{
         bottom: 10px;
         left: 30px;
     }
+    
+    #chart{
+        width: 440px;
+        height: 300px;
+        position: absolute;
+        top: 260px;
+        left: 272px;
+        border-radius: 15px;
+    }
+
+    #carouselExampleAutoplaying1{
+        width: 500px;
+        position: absolute;
+        right: 20px;
+        top: 260px;
+    }
+
+    .carousel-inner>.carousel-item>img{
+        width: 500px;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    #table-div-dash{
+        width: 550px;
+        height: 300px;
+        position: absolute;
+        left: 264px;
+        bottom: 184px;
+        border-radius: 10px;
+    }
+
+    #table-div-dash>.table{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 550px;
+        border-radius: 10px;
+    }
+
+    #table-div>h4{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    #categories{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        bottom: 184px;
+        right: 16px;
+        border-radius: 10px;
+    }
+
+    #categories>h4{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: medium;
+    }
+
+    #categories>div{
+        width: 50px;
+        height: 50px;
+        margin-top: 45px;
+        margin-left: 20px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    #categories>div>img{
+        width: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #categories>div>h5{
+        position: absolute;
+        left: 60px;
+        font-size: small;
+        top: 5px;
+    }
+
+    #categories>div>h6{
+        position: absolute;
+        top: 25px;
+        left: 60px;
+        font-size: small;
+    }
+
+    #categories>div>p{
+        position: absolute;
+        left: 135px;
+        top: 23px;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    #arrow-image1{
+        position: absolute;
+        right: 40px;
+        top: 50px;
+    }
+
+    #arrow-image2{
+        position: absolute;
+        right: 40px;
+        top: 150px;
+    }
+
+    #arrow-image3{
+        position: absolute;
+        right: 40px;
+        top: 250px;
+    }
+
 }
 
 

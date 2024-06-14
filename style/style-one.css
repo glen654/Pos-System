@@ -1,4 +1,4 @@
-#dashboard-section{
+ #dashboard-section{
     width: 100vw;
     height: 100vh;
     background-color: #ECF0F1;
@@ -30,13 +30,13 @@
     position: relative;
 }
 
-/*#btn-order-add{
+#btn-order-add{
     position: absolute;
     bottom: 30px;
     right: 40px;
-}*/
+}
 
-#btn-order-add:hover{
+ #btn-order-add:hover{
     background-color: #e74c3c;
     border: #e74c3c;
 }
@@ -48,7 +48,7 @@
     color: white;
     font-weight: bold;
 }
-.nav-bar{
+/* .nav-bar{
     width: 15vw;
     height: 95vh;
     background-color: white;
@@ -81,7 +81,7 @@
 
 .nav-bar>h3{
     margin-left: 60px;
-}
+} */
 
 .top{
     position: absolute;
@@ -110,9 +110,9 @@
     bottom: 0;
     left: 0;
     margin: auto;
-}/*  box-shadow: 0 20px 20px -20px #333;*/
+}  
 
-.cards{
+ .cards{
     display: flex;
     justify-content: space-between;
 }
@@ -236,6 +236,17 @@
     position: absolute;
     right: 30px;
     top: 260px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#chart{
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 260px;
+    left: 310px;
+    border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -439,7 +450,7 @@
     background-color: #e74c3c;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+} 
 
 
 /*Login section*/
@@ -481,7 +492,6 @@ section>img{
 
 #login-div{
     width: 500px;
-    height: 800px;
     border: 2px solid #9F70FD;
     position: relative;
     bottom: 130px;
@@ -489,6 +499,7 @@ section>img{
     border-radius: 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
 #login-username{
     position: absolute;
     top: 240px;
@@ -537,7 +548,7 @@ input,input::-webkit-input-placeholder{
 
 /*Place order*/
 
-#btn-order-add{
+ #btn-order-add{
     position: absolute;
     top: 400px;
     left: 220px;
@@ -566,4 +577,152 @@ input,input::-webkit-input-placeholder{
     position: absolute;
     top: 85px;
     left: 140px;
+} 
+
+
+/*Navigation*/
+
+.nav-bar{
+    width: 15vw;
+    height: 95vh;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-top: 20px;
+}
+
+.nav-links>span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 15px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-links>span:hover{
+    color: white;
+    transition-duration: 1s;
+}
+
+.nav-bar>h3{
+    margin-left: 60px;
+}
+
+hr{
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+.dash-icon{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+#nav-bar>.nav-links:last-child{
+    margin-top: 340px;
+}
+
+.nav-links:hover{
+    background-color: #7F27FF;
+    color: white;
+    transition-duration: 1s;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+#categories{
+    width: 700px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#categories>h4{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: black;
+    font-size: medium;
+}
+
+#categories>div{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-top: 45px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#categories>div>img{
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#categories>div>h5{
+    position: absolute;
+    left: 60px;
+    font-size: small;
+    top: 5px;
+}
+
+#categories>div>h6{
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    font-size: small;
+}
+
+#categories>div>p{
+    position: absolute;
+    left: 135px;
+    top: 23px;
+    font-size: small;
+    font-weight: bold;
+    color:  #AAA69D;
+}
+
+#arrow-image1{
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+#arrow-image2{
+    position: absolute;
+    right: 40px;
+    top: 150px;
+}
+
+#arrow-image3{
+    position: absolute;
+    right: 40px;
+    top: 250px;
 }

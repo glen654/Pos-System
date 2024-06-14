@@ -773,7 +773,7 @@ hr{
         position: absolute;
         right: 0;
         margin-right: 180px;
-        bottom: 210px;
+        bottom: 267px;
         border-radius: 100%;
         width: 60px;
         aspect-ratio: 1/1;
@@ -1008,5 +1008,5 @@ hr{
 }
 
 @media all and (max-width: 320px){
-    
+
 }

@@ -2750,9 +2750,691 @@ hr{
 }
 
 @media all and (min-width: 320px) and (max-width: 375px){
+    #dashboard-section{
+        width: 100vw;
+        height: 100vh;
+        background-color: #ECF0F1;
+        overflow-y: scroll;
+        position: relative;
+    }
 
+    .top{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 30vh;
+        margin-top: 0;
+    }
+
+    .top>h2{
+        position: relative;
+        left: 19px;
+        top: 30px;
+        font-weight: bold;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+
+    .nav-bar>h3{
+        margin-left: 60px;
+    }
+
+    .user-image{
+        position: absolute;
+        right: 0;
+        margin-right: 125px;
+        bottom: 134px;
+        border-radius: 100%;
+        width: 60px;
+        aspect-ratio: 1/1;
+    }
+
+    .user-image>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    h4{
+        position: absolute;
+        right: -31px;
+        top: 40px;
+        margin-right: 34px;
+        font-weight: bold;
+    }
+
+
+    #chart{
+        width: 358px;
+        height: 300px;
+        position: absolute;
+        top: 571px;
+        left: 6px;
+        border-radius: 15px;
+    }
+
+    hr{
+        border:none;
+        height: 20px;
+        width: 90%;
+        height: 50px;
+        margin-top: 0;
+        border-bottom: 1px solid #1f1209;
+        margin: -50px auto 10px;
+    }
+
+    .nav-links{
+        margin-top: 50px;
+        margin-left: 10px;
+        width: 220px;
+        height: 60px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+
+    .nav-links>span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 15px 0 0 0;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .dash-icon{
+        position: absolute;
+        top: 15px;
+        left: 13px;
+    }
+
+    .nav-bar>.nav-links:last-child{
+        margin-top: 340px;
+    }
+
+    .nav-links:hover{
+        transition-duration: 1s;
+        width: 260px;
+        border-radius: 10px;
+    }
+
+    .nav-links>span:hover{
+        transition-duration: 1s;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card1{
+        width: 358px;
+        height: 150px;
+        position: absolute;
+        left: 5px;
+        top: 100px;
+        border-radius: 10px;
+    }
+
+    .card2{
+        width: 358px;
+        height: 150px;
+        position: absolute;
+        left: 5px;
+        top: 257px;
+        border-radius: 10px;
+    }
+
+    .card3{
+        width: 358px;
+        height: 150px;
+        position: absolute;
+        left: 5px;
+        top: 414px;
+        border-radius: 10px;
+    }
+
+    .card-h3{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+
+    }
+
+    .card-image1{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        right: 10px;
+        top:10px;
+    }
+
+    .card-image2{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        right: 10px;
+        top:10px;
+    }
+
+    .card-image3{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        right: 10px;
+        top:10px;
+    }
+
+    .card-image1>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+
+    }
+
+    .card-image2>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .card-image3>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40px;
+    }
+
+    .card-number{
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+
+    #carouselExampleAutoplaying1{
+        width: 358px;
+        position: absolute;
+        right: 11px;
+        top: 880px;
+    }
+
+    .carousel-inner>.carousel-item>img{
+        width: 358px;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    #table-div-dash{
+        width: 358px;
+        height: 300px;
+        position: absolute;
+        left: 6px;
+        bottom: -821px;
+        border-radius: 10px;
+    }
+
+    #table-div-dash>.table{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 358px;
+        border-radius: 10px;
+    }
+
+    #table-div-dash>h4{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    #categories{
+        width: 358px;
+        height: 300px;
+        position: absolute;
+        bottom: -1129px;
+        right: 11px;
+        border-radius: 10px;
+    }
+
+    #categories>h4{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: medium;
+    }
+
+    #categories>div{
+        width: 50px;
+        height: 50px;
+        margin-top: 45px;
+        margin-left: 20px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    #categories>div>img{
+        width: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #categories>div>h5{
+        position: absolute;
+        left: 60px;
+        font-size: small;
+        top: 5px;
+    }
+
+    #categories>div>h6{
+        position: absolute;
+        top: 25px;
+        left: 60px;
+        font-size: small;
+    }
+
+    #categories>div>p{
+        position: absolute;
+        left: 135px;
+        top: 23px;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    #arrow-image1{
+        position: absolute;
+        right: 40px;
+        top: 50px;
+    }
+
+    #arrow-image2{
+        position: absolute;
+        right: 40px;
+        top: 150px;
+    }
+
+    #arrow-image3{
+        position: absolute;
+        right: 40px;
+        top: 250px;
+    }
+
+    .bi-list{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
 }
 
 @media all and (max-width: 320px){
+    #dashboard-section{
+        width: 100vw;
+        height: 100vh;
+        background-color: #ECF0F1;
+        overflow-y: scroll;
+        position: relative;
+    }
 
+    .top{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 30vh;
+        margin-top: 0;
+    }
+
+    .top>h2{
+        position: relative;
+        left: 19px;
+        top: 30px;
+        font-weight: bold;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+
+    .nav-bar>h3{
+        margin-left: 60px;
+    }
+
+    .user-image{
+        position: absolute;
+        right: 0;
+        margin-right: 125px;
+        bottom: 134px;
+        border-radius: 100%;
+        width: 60px;
+        aspect-ratio: 1/1;
+    }
+
+    .user-image>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    h4{
+        position: absolute;
+        right: -31px;
+        top: 40px;
+        margin-right: 34px;
+        font-weight: bold;
+    }
+
+
+    #chart{
+        width: 358px;
+        height: 300px;
+        position: absolute;
+        top: 571px;
+        left: 6px;
+        border-radius: 15px;
+    }
+
+    hr{
+        border:none;
+        height: 20px;
+        width: 90%;
+        height: 50px;
+        margin-top: 0;
+        border-bottom: 1px solid #1f1209;
+        margin: -50px auto 10px;
+    }
+
+    .nav-links{
+        margin-top: 50px;
+        margin-left: 10px;
+        width: 220px;
+        height: 60px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+
+    .nav-links>span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 15px 0 0 0;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .dash-icon{
+        position: absolute;
+        top: 15px;
+        left: 13px;
+    }
+
+    .nav-bar>.nav-links:last-child{
+        margin-top: 340px;
+    }
+
+    .nav-links:hover{
+        transition-duration: 1s;
+        width: 260px;
+        border-radius: 10px;
+    }
+
+    .nav-links>span:hover{
+        transition-duration: 1s;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card1{
+        width: 358px;
+        height: 150px;
+        position: absolute;
+        left: 5px;
+        top: 100px;
+        border-radius: 10px;
+    }
+
+    .card2{
+        width: 358px;
+        height: 150px;
+        position: absolute;
+        left: 5px;
+        top: 257px;
+        border-radius: 10px;
+    }
+
+    .card3{
+        width: 358px;
+        height: 150px;
+        position: absolute;
+        left: 5px;
+        top: 414px;
+        border-radius: 10px;
+    }
+
+    .card-h3{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+
+    }
+
+    .card-image1{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        right: 10px;
+        top:10px;
+    }
+
+    .card-image2{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        right: 10px;
+        top:10px;
+    }
+
+    .card-image3{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        right: 10px;
+        top:10px;
+    }
+
+    .card-image1>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+
+    }
+
+    .card-image2>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .card-image3>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40px;
+    }
+
+    .card-number{
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+
+    #carouselExampleAutoplaying1{
+        width: 358px;
+        position: absolute;
+        right: 11px;
+        top: 880px;
+    }
+
+    .carousel-inner>.carousel-item>img{
+        width: 358px;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    #table-div-dash{
+        width: 358px;
+        height: 300px;
+        position: absolute;
+        left: 6px;
+        bottom: -821px;
+        border-radius: 10px;
+    }
+
+    #table-div-dash>.table{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 358px;
+        border-radius: 10px;
+    }
+
+    #table-div-dash>h4{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    #categories{
+        width: 358px;
+        height: 300px;
+        position: absolute;
+        bottom: -1129px;
+        right: 11px;
+        border-radius: 10px;
+    }
+
+    #categories>h4{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: medium;
+    }
+
+    #categories>div{
+        width: 50px;
+        height: 50px;
+        margin-top: 45px;
+        margin-left: 20px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    #categories>div>img{
+        width: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #categories>div>h5{
+        position: absolute;
+        left: 60px;
+        font-size: small;
+        top: 5px;
+    }
+
+    #categories>div>h6{
+        position: absolute;
+        top: 25px;
+        left: 60px;
+        font-size: small;
+    }
+
+    #categories>div>p{
+        position: absolute;
+        left: 135px;
+        top: 23px;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    #arrow-image1{
+        position: absolute;
+        right: 40px;
+        top: 50px;
+    }
+
+    #arrow-image2{
+        position: absolute;
+        right: 40px;
+        top: 150px;
+    }
+
+    #arrow-image3{
+        position: absolute;
+        right: 40px;
+        top: 250px;
+    }
+
+    .bi-list{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
 }

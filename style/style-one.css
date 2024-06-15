@@ -1109,7 +1109,36 @@ hr{
         left: 0;
     }
 
-
+    #btn-order-add{
+        position: absolute;
+        top: 400px;
+        left: 220px;
+        margin: auto;
+    }
+    
+    
+    #btn-purchase{
+        position: absolute;
+        top: 438px;
+        left: 90px;
+        margin: auto;
+    }
+    
+    #customer-dropdown{
+        width: 309px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+    
+    #total-label{
+        position: absolute;
+        top: 85px;
+        left: 140px;
+    } 
 }
 
 

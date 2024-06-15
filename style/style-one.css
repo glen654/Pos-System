@@ -1038,6 +1038,13 @@ hr{
         top: 260px;
     }
 
+    #carouselExampleAutoplaying3{
+        width: 500px;
+        position: absolute;
+        right: 30px;
+        top: 260px;
+    }
+
     .add{
         width: 440px;
         height: 400px;
@@ -1448,6 +1455,13 @@ hr{
         top: 260px;
     }
 
+    #carouselExampleAutoplaying3{
+        width: 500px;
+        position: absolute;
+        right: 30px;
+        top: 260px;
+    }
+
     .add{
         width: 440px;
         height: 400px;
@@ -1526,6 +1540,13 @@ hr{
         width: 100vw;
         height: 100vh;
         background-color: #ECF0F1;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    #item-section{
+        width: 100vw;
+        height: 100vh;
         overflow-y: scroll;
         position: relative;
     }
@@ -1871,6 +1892,13 @@ hr{
         top: 260px;
     }
 
+    #carouselExampleAutoplaying3{
+        width: 500px;
+        position: absolute;
+        right: 155px;
+        top: 260px;
+    }
+
     .add{
         width: 501px;
         height: 400px;
@@ -1950,6 +1978,13 @@ hr{
         width: 100vw;
         height: 100vh;
         background-color: #ECF0F1;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    #item-section{
+        width: 100vw;
+        height: 100vh;
         overflow-y: scroll;
         position: relative;
     }
@@ -2296,6 +2331,13 @@ hr{
         top: 260px;
     }
 
+    #carouselExampleAutoplaying3{
+        width: 500px;
+        position: absolute;
+        right: 155px;
+        top: 260px;
+    }
+
     .add{
         width: 501px;
         height: 400px;
@@ -2371,6 +2413,13 @@ hr{
     }
 
     #customer-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    #item-section{
         width: 100vw;
         height: 100vh;
         overflow-y: scroll;
@@ -2719,6 +2768,13 @@ hr{
         top: 580px;
     }
 
+    #carouselExampleAutoplaying3{
+        width: 412px;
+        position: absolute;
+        right: 11px;
+        top: 580px;
+    }
+
     .add{
         width: 412px;
         height: 400px;
@@ -2793,6 +2849,13 @@ hr{
     }
 
     #customer-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    #item-section{
         width: 100vw;
         height: 100vh;
         overflow-y: scroll;
@@ -3140,6 +3203,13 @@ hr{
         right: 11px;
         top: 580px;
     }
+    
+    #carouselExampleAutoplaying3{
+        width: 374px;
+        position: absolute;
+        right: 11px;
+        top: 580px;
+    }
 
     .add{
         width: 374px;
@@ -3216,6 +3286,13 @@ hr{
     }
 
     #customer-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    #item-section{
         width: 100vw;
         height: 100vh;
         overflow-y: scroll;
@@ -3564,6 +3641,13 @@ hr{
         top: 580px;
     }
 
+    #carouselExampleAutoplaying3{
+        width: 358px;
+        position: absolute;
+        right: 11px;
+        top: 580px;
+    }
+
     .add{
         width: 358px;
         height: 400px;
@@ -3639,6 +3723,13 @@ hr{
     }
 
     #customer-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    #item-section{
         width: 100vw;
         height: 100vh;
         overflow-y: scroll;
@@ -3981,6 +4072,13 @@ hr{
     }
 
     #carouselExampleAutoplaying2{
+        width: 358px;
+        position: absolute;
+        right: 11px;
+        top: 580px;
+    }
+
+    #carouselExampleAutoplaying3{
         width: 358px;
         position: absolute;
         right: 11px;

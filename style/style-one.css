@@ -2370,6 +2370,13 @@ hr{
         position: relative;
     }
 
+    #customer-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+
     .top{
         position: absolute;
         top: 0;
@@ -2703,6 +2710,77 @@ hr{
         display: block;
         position: absolute;
         right: 0;
+    }
+
+    #carouselExampleAutoplaying2{
+        width: 412px;
+        position: absolute;
+        right: 11px;
+        top: 580px;
+    }
+
+    .add{
+        width: 412px;
+        height: 400px;
+        position: absolute;
+        top: 895px;
+        left: 8px;
+        border-radius: 15px;
+    }
+
+    .id{
+        width: 370px;
+        position: relative;
+        top: 30px;
+        left: 22px;
+    }
+    
+    .first-name{
+        width: 370px;
+        position: absolute;
+        top: 80px;
+        left: 30px;
+    }
+    
+    
+    .inputAddress{
+        width: 370px;
+        position: absolute;
+        top: 130px;
+        left: 30px;
+    }
+    
+    .inputTel{
+        width: 370px;
+        position: absolute;
+        top: 180px;
+        left: 30px;
+    }
+
+    .table-div{
+        width: 412px;
+        height: 300px;
+        position: absolute;
+        left: 8px;
+        bottom: -675px;
+        border-radius: 10px;
+    }
+    
+    .table{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 30px;
+        left: 0;
+        margin: auto;
+        width: 412px;
+        border-radius: 10px;
+    }
+    
+    .table-div>h4{
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 

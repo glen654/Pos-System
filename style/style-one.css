@@ -1554,6 +1554,37 @@ hr{
         top: 0;
         left: 0;
     }
+
+    #btn-order-add{
+        position: absolute;
+        top: 400px;
+        left: 220px;
+        margin: auto;
+    }
+    
+    
+    #btn-purchase{
+        position: absolute;
+        top: 432px;
+        left: 135px;
+        margin: auto;
+    }
+    
+    #customer-dropdown{
+        width: 309px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+    
+    #total-label{
+        position: absolute;
+        top: 85px;
+        left: 140px;
+    } 
 }
 
 @media all and (min-width: 768px) and (max-width: 820px){
@@ -1579,6 +1610,14 @@ hr{
         overflow-y: scroll;
         position: relative;
     }
+
+    #place-order-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+    
 
     .top{
         position: absolute;
@@ -1991,6 +2030,37 @@ hr{
         top: 0;
         left: 0;
     }
+
+    #btn-order-add{
+        position: absolute;
+        top: 400px;
+        left: 220px;
+        margin: auto;
+    }
+    
+    
+    #btn-purchase{
+        position: absolute;
+        top: 371px;
+        left: 210px;
+        margin: auto;
+    }
+    
+    #customer-dropdown{
+        width: 309px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+    
+    #total-label{
+        position: absolute;
+        top: 85px;
+        left: 140px;
+    } 
 }
 
 
@@ -2430,6 +2500,37 @@ hr{
         top: 0;
         left: 0;
     }
+
+    #btn-order-add{
+        position: absolute;
+        top: 400px;
+        left: 220px;
+        margin: auto;
+    }
+    
+    
+    #btn-purchase{
+        position: absolute;
+        top: 371px;
+        left: 210px;
+        margin: auto;
+    }
+    
+    #customer-dropdown{
+        width: 309px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+    
+    #total-label{
+        position: absolute;
+        top: 85px;
+        left: 140px;
+    } 
 }
 
 @media all and (min-width: 425px) and (max-width: 430px){

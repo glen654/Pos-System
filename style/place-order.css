@@ -2212,7 +2212,7 @@ h4{
         width: 360px;
         height: 419px;
         position: absolute;
-        top: 120px;
+        top: 570px;
         left: 40px;
         border-radius: 15px;
     }
@@ -2221,7 +2221,7 @@ h4{
         width: 360px;
         height: 436px;
         position: absolute;
-        top: 545px;
+        top: 995px;
         left: 41px;
         border-radius: 15px;
     }
@@ -2230,17 +2230,17 @@ h4{
         width: 364px;
         height: 420px;
         position: absolute;
-        top: 988px;
+        top: 1447px;
         left: 40px;
         border-radius: 15px;
     }
 
-    #table-div{
-        width: 405px;
+    #table-div-order{
+        width: 412px;
         height: 231px;
         position: absolute;
-        left: 15px;
-        bottom: -722px;
+        left: 7px;
+        bottom: -1189px;
         border-radius: 10px;
     }
 
@@ -2621,7 +2621,7 @@ h4{
         width: 360px;
         height: 419px;
         position: absolute;
-        top: 120px;
+        top: 586px;
         left: 18px;
         border-radius: 15px;
     }
@@ -2630,7 +2630,7 @@ h4{
         width: 360px;
         height: 436px;
         position: absolute;
-        top: 545px;
+        top: 1011px;
         left: 18px;
         border-radius: 15px;
     }
@@ -2639,17 +2639,17 @@ h4{
         width: 364px;
         height: 420px;
         position: absolute;
-        top: 988px;
+        top: 1456px;
         left: 17px;
         border-radius: 15px;
     }
 
-    #table-div{
-        width: 365px;
+    #table-div-order{
+        width: 373px;
         height: 231px;
         position: absolute;
-        left: 15px;
-        bottom: -806px;
+        left: 7px;
+        bottom: -1274px;
         border-radius: 10px;
     }
 
@@ -3030,7 +3030,7 @@ h4{
         width: 360px;
         height: 419px;
         position: absolute;
-        top: 120px;
+        top: 580px;
         left: 8px;
         border-radius: 15px;
     }
@@ -3039,7 +3039,7 @@ h4{
         width: 360px;
         height: 436px;
         position: absolute;
-        top: 545px;
+        top: 1012px;
         left: 8px;
         border-radius: 15px;
     }
@@ -3048,17 +3048,17 @@ h4{
         width: 364px;
         height: 420px;
         position: absolute;
-        top: 988px;
+        top: 1456px;
         left: 8px;
         border-radius: 15px;
     }
 
-    #table-div{
+    #table-div-order{
         width: 365px;
         height: 231px;
         position: absolute;
         left: 6px;
-        bottom: -981px;
+        bottom: -1453px;
         border-radius: 10px;
     }
 
@@ -3462,7 +3462,7 @@ h4{
         border-radius: 15px;
     }
 
-    #table-div{
+    #table-div-order{
         width: 365px;
         height: 231px;
         position: absolute;

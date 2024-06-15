@@ -2088,6 +2088,14 @@ hr{
         position: relative;
     }
 
+    #place-order-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+    
+
     .top{
         position: absolute;
         top: 0;
@@ -2556,6 +2564,14 @@ hr{
         position: relative;
     }
 
+    #place-order-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+    
+
     .top{
         position: absolute;
         top: 0;
@@ -2968,6 +2984,37 @@ hr{
         top: 0;
         left: 0;
     }
+
+    #btn-order-add{
+        position: absolute;
+        top: 400px;
+        left: 220px;
+        margin: auto;
+    }
+    
+    
+    #btn-purchase{
+        position: absolute;
+        top: 371px;
+        left: 210px;
+        margin: auto;
+    }
+    
+    #customer-dropdown{
+        width: 309px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+    
+    #total-label{
+        position: absolute;
+        top: 85px;
+        left: 140px;
+    } 
 }
 
 @media all and (min-width: 375px) and (max-width: 425px){
@@ -2986,6 +3033,13 @@ hr{
     }
 
     #item-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    #place-order-section{
         width: 100vw;
         height: 100vh;
         overflow-y: scroll;
@@ -3404,6 +3458,37 @@ hr{
         top: 0;
         left: 0;
     }
+
+    #btn-order-add{
+        position: absolute;
+        top: 400px;
+        left: 220px;
+        margin: auto;
+    }
+    
+    
+    #btn-purchase{
+        position: absolute;
+        top: 371px;
+        left: 210px;
+        margin: auto;
+    }
+    
+    #customer-dropdown{
+        width: 309px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+    
+    #total-label{
+        position: absolute;
+        top: 85px;
+        left: 140px;
+    } 
 }
 
 @media all and (min-width: 320px) and (max-width: 375px){
@@ -3423,6 +3508,13 @@ hr{
     }
 
     #item-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    #place-order-section{
         width: 100vw;
         height: 100vh;
         overflow-y: scroll;
@@ -3840,6 +3932,37 @@ hr{
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    #btn-order-add{
+        position: absolute;
+        top: 400px;
+        left: 220px;
+        margin: auto;
+    }
+    
+    
+    #btn-purchase{
+        position: absolute;
+        top: 371px;
+        left: 210px;
+        margin: auto;
+    }
+    
+    #customer-dropdown{
+        width: 309px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+    
+    #total-label{
+        position: absolute;
+        top: 85px;
+        left: 140px;
     }
 }
 
@@ -3866,6 +3989,13 @@ hr{
         position: relative;
     }
 
+    #place-order-section{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        position: relative;
+    }
+
     .top{
         position: absolute;
         top: 0;
@@ -4277,5 +4407,36 @@ hr{
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    #btn-order-add{
+        position: absolute;
+        top: 400px;
+        left: 220px;
+        margin: auto;
+    }
+    
+    
+    #btn-purchase{
+        position: absolute;
+        top: 371px;
+        left: 210px;
+        margin: auto;
+    }
+    
+    #customer-dropdown{
+        width: 309px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+    
+    #total-label{
+        position: absolute;
+        top: 85px;
+        left: 140px;
     }
 }

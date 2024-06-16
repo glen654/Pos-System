@@ -3016,6 +3016,81 @@ hr{
         top: 85px;
         left: 140px;
     } 
+
+    #login-div>div>h2{
+        font-weight: bolder;
+        font-size: 35px;
+        position: relative;
+        top: 20px;
+        text-align: center;
+    }
+    
+    #login-div>div>h5{
+        font-size: 25px;
+        color: gray;
+        position: relative;
+        top: 40px;
+        text-align: center;
+    }
+    
+    #login-section>form{
+        margin-top: 40px;
+    }
+    
+    section>img{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 379px;
+        height: 503px;
+        margin: 30px 0 0 27px;
+        border-radius: 10px;
+    }
+    
+    #login-section{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 200px 220px 0 0;
+    }
+    
+    #login-div{
+        width: 369px;
+        height: 526px;
+        position: relative;
+        bottom: -353px;
+        left: 190px;
+        border-radius: 50px;
+    }
+    
+    #login-username{
+        position: absolute;
+        top: 240px;
+        left: 35px;
+        width: 277px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    #login-password{
+        width: 277px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 320px;
+        left: 35px;
+    }
+    
+    
+    #btn-signIn{
+        background-color: #9F70FD;
+        border: #9F70FD;
+        font-weight: bolder;
+        position: absolute;
+        top: 380px;
+        left: 35px;
+        width: 277px;
+    }
+    
+    
 }
 
 @media all and (min-width: 375px) and (max-width: 425px){
@@ -3490,6 +3565,79 @@ hr{
         top: 85px;
         left: 140px;
     } 
+
+    #login-div>div>h2{
+        font-weight: bolder;
+        font-size: 35px;
+        position: relative;
+        top: 20px;
+        text-align: center;
+    }
+    
+    #login-div>div>h5{
+        font-size: 25px;
+        color: gray;
+        position: relative;
+        top: 40px;
+        text-align: center;
+    }
+    
+    #login-section>form{
+        margin-top: 40px;
+    }
+    
+    section>img{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 379px;
+        height: 503px;
+        margin: 30px 0 0 5px;
+        border-radius: 10px;
+    }
+    
+    #login-section{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 200px 220px 0 0;
+    }
+    
+    #login-div{
+        width: 369px;
+        height: 526px;
+        position: relative;
+        bottom: -353px;
+        left: 209px;
+        border-radius: 50px;
+    }
+    
+    #login-username{
+        position: absolute;
+        top: 240px;
+        left: 35px;
+        width: 277px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    #login-password{
+        width: 277px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 320px;
+        left: 35px;
+    }
+    
+    
+    #btn-signIn{
+        background-color: #9F70FD;
+        border: #9F70FD;
+        font-weight: bolder;
+        position: absolute;
+        top: 380px;
+        left: 35px;
+        width: 277px;
+    }
 }
 
 @media all and (min-width: 320px) and (max-width: 375px){
@@ -3965,6 +4113,79 @@ hr{
         top: 85px;
         left: 140px;
     }
+
+    #login-div>div>h2{
+        font-weight: bolder;
+        font-size: 35px;
+        position: relative;
+        top: 20px;
+        text-align: center;
+    }
+    
+    #login-div>div>h5{
+        font-size: 25px;
+        color: gray;
+        position: relative;
+        top: 40px;
+        text-align: center;
+    }
+    
+    #login-section>form{
+        margin-top: 40px;
+    }
+    
+    section>img{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 359px;
+        height: 503px;
+        margin: 30px 0 0 8px;
+        border-radius: 10px;
+    }
+    
+    #login-section{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 200px 220px 0 0;
+    }
+    
+    #login-div{
+        width: 363px;
+        height: 526px;
+        position: relative;
+        bottom: -353px;
+        left: 214px;
+        border-radius: 50px;
+    }
+    
+    #login-username{
+        position: absolute;
+        top: 240px;
+        left: 35px;
+        width: 277px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    #login-password{
+        width: 277px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 320px;
+        left: 35px;
+    }
+    
+    
+    #btn-signIn{
+        background-color: #9F70FD;
+        border: #9F70FD;
+        font-weight: bolder;
+        position: absolute;
+        top: 380px;
+        left: 35px;
+        width: 277px;
+    }
 }
 
 @media all and (max-width: 320px){
@@ -4439,5 +4660,78 @@ hr{
         position: absolute;
         top: 85px;
         left: 140px;
+    }
+
+    #login-div>div>h2{
+        font-weight: bolder;
+        font-size: 35px;
+        position: relative;
+        top: 20px;
+        text-align: center;
+    }
+    
+    #login-div>div>h5{
+        font-size: 25px;
+        color: gray;
+        position: relative;
+        top: 40px;
+        text-align: center;
+    }
+    
+    #login-section>form{
+        margin-top: 40px;
+    }
+    
+    section>img{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 359px;
+        height: 503px;
+        margin: 30px 0 0 8px;
+        border-radius: 10px;
+    }
+    
+    #login-section{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 200px 220px 0 0;
+    }
+    
+    #login-div{
+        width: 363px;
+        height: 526px;
+        position: relative;
+        bottom: -353px;
+        left: 214px;
+        border-radius: 50px;
+    }
+    
+    #login-username{
+        position: absolute;
+        top: 240px;
+        left: 35px;
+        width: 277px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    #login-password{
+        width: 277px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 320px;
+        left: 35px;
+    }
+    
+    
+    #btn-signIn{
+        background-color: #9F70FD;
+        border: #9F70FD;
+        font-weight: bolder;
+        position: absolute;
+        top: 380px;
+        left: 35px;
+        width: 277px;
     }
 }

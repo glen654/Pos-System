@@ -6,19 +6,19 @@ const deleteBtn = $('#item-btn-delete');
 
 var recordIndex;
 
-function loadTableItem(){
-    $("#table-item").empty();
+// function loadTableItem(){
+//     $("#table-item").empty();
 
-    items.map((item,index) => {
-        var record = `<tr>
-            <td class="item-code-value">${item.itemCode}</td>
-            <td class="item-name-value">${item.itemName}</td>
-            <td class="item-qty-value">${item.itemQty}</td>
-            <td class="item-price-value">${item.itemPrice}</td>
-        <tr>`
-        $("#table-item").append(record);
-    });
-}
+//     items.map((item,index) => {
+//         var record = `<tr>
+//             <td class="item-code-value">${item.itemCode}</td>
+//             <td class="item-name-value">${item.itemName}</td>
+//             <td class="item-qty-value">${item.itemQty}</td>
+//             <td class="item-price-value">${item.itemPrice}</td>
+//         <tr>`
+//         $("#table-item").append(record);
+//     });
+// }
 // $("#item-btn-save").on('click',() => {
 //     if(!validateItem()){
 //         return;
@@ -105,32 +105,92 @@ function itemSave(){
     })
 }
 
+function itemUpdate(){
+    if (!validateItem()) {
+        return;
+   }
+   
+   var itemCode = $("#item_code").val();
+   var itemName = $("#item_name").val();
+   var itemQty = $("#item_qty").val();
+   var itemPrice = $("#item_price").val();
+
+    $.ajax({
+        url:"http://localhost:8081/posApi/item" + itemCode,
+        method:"PUT",
+        contentType:"application/json",
+        "data":JSON.stringify({
+            "itemName":itemName,
+            "qtyOnHand":itemQty,
+            "unitPrice":itemPrice
+        }),
+        success:function (results) {
+            console.log(results);
+            alert("Item Update Successfull");
+            reset();
+            loadItem();
+        },
+        error:function (error) {
+            console.log(error);
+            alert("Item Update Unsuccessful");
+        }
+    })
+}
+
+function itemDelete(){
+    var itemCode = $("#item_code").val();
+
+    $.ajax({
+        url:"http://localhost:8081/posApi/item" + itemCode,
+        method:"DELETE",
+        contentType:"application/json",
+        success:function (results) {
+            console.log(results);
+            alert("Item Deleted Suncessfully");
+            loadItem();
+        },
+        error:function (error) {
+            console.log(error);
+            alert("Delete Item Unsuccessful");
+        }
+    })
+}
+
 saveBtn.on('click',function(){
     event.preventDefault();
     itemSave();
 });
 
-$("#item-btn-update").on('click',() =>{
-    var itemCode = $("#item_code").val();
-    var itemName = $("#item_name").val();
-    var itemQty = $("#item_qty").val();
-    var itemPrice = $("#item_price").val();
-
-
-    items[recordIndex] = new ItemModel(itemCode,itemName,itemQty,itemPrice);
-
-
-    loadTableItem(items);
-    reset();
-
+updateBtn.on('click',function(){
+    event.preventDefault();
+    itemUpdate();
 });
 
-$("#item-btn-delete").on('click',() =>{
-    items.splice(recordIndex,1);
-    loadTableItem();
-    reset();
-
+deleteBtn.on('click',function(){
+    itemDelete();
 });
+
+// $("#item-btn-update").on('click',() =>{
+//     var itemCode = $("#item_code").val();
+//     var itemName = $("#item_name").val();
+//     var itemQty = $("#item_qty").val();
+//     var itemPrice = $("#item_price").val();
+
+
+//     items[recordIndex] = new ItemModel(itemCode,itemName,itemQty,itemPrice);
+
+
+//     loadTableItem(items);
+//     reset();
+
+// });
+
+// $("#item-btn-delete").on('click',() =>{
+//     items.splice(recordIndex,1);
+//     loadTableItem();
+//     reset();
+
+// });
 
 $("#table-item").on('click','tr',function (){
     let index = $(this).index();

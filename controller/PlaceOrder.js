@@ -34,7 +34,7 @@ $(document).ready(() => {
             text: 'Select Customer ID',
             value: ''
         });
-
+        1234
         $customerDropdown.append(defaultOption);
 
 

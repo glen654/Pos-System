@@ -1,73 +1,205 @@
 import CustomerModel from "../model/CustomerModel.js";
 import {customers} from "../db/db.js"
+const saveBtn = $('#customer-btn-save');
+const updateBtn = $('#customer-btn-update');
+const deleteBtn = $('#customer-btn-delete');
 
 var recordIndex;
 
-function loadTableCustomer(){
-    $("#customer-table").empty();
+// function loadTableCustomer(){
+//     $("#customer-table").empty();
     
-    customers.map((item,index) =>{
-        var record = `<tr>
-            <td class="customer-id-value">${item.cusId}</td>
-            <td class="customer-name-value">${item.cusName}</td>
-            <td class="customer-address-value">${item.cusAddress}</td>
-            <td class="customer-tel-value">${item.cusTel}</td>
-        <tr>`
-        $("#customer-table").append(record);
-    });
+//     customers.map((item,index) =>{
+//         var record = `<tr>
+//             <td class="customer-id-value">${item.cusId}</td>
+//             <td class="customer-name-value">${item.cusName}</td>
+//             <td class="customer-address-value">${item.cusAddress}</td>
+//             <td class="customer-tel-value">${item.cusTel}</td>
+//         <tr>`
+//         $("#customer-table").append(record);
+//     });
+// }
+
+// $("#customer-btn-save").on('click',() =>{
+//     if (!validateCustomer()) {
+//         return;
+//     }
+    
+//     var cusId = $("#cus_id").val();
+//     var cusName = $("#cus_name").val();
+//     var cusAddress = $("#cus_address").val();
+//     var cusTel = $("#cus_tel").val();
+
+//     let isDuplicate = customers.some(customer => customer.cusId === cusId);
+
+//     if(isDuplicate){
+//         alert('Customer ID Already Exists. Please Try another one');
+//         return;
+//     }
+    
+//     let customer = new CustomerModel(cusId,cusName,cusAddress,cusTel);
+    
+//     customers.push(customer);
+//     loadTableCustomer();
+//     updateCustomerCount();
+    
+//     reset();
+    
+// });
+
+function loadCustomers(){
+    $.ajax({
+        url: 'http://localhost:8081/posApi/customer',
+        type: 'GET',           
+        contentType: 'application/json', 
+        success: function(customers) {
+            $("#customer-table").empty();
+            
+            customers.forEach(function(item) {
+                var record = `
+                    <tr>
+                        <td class="customer-id-value">${item.customerId}</td>
+                        <td class="customer-name-value">${item.customerName}</td>
+                        <td class="customer-address-value">${item.customerAddress}</td>
+                        <td class="customer-tel-value">${item.customerTel}</td>
+                    </tr>`;
+                $("#customer-table").append(record);
+            });
+        },
+        error: function(xhr, status, error) {
+            console.error("Failed to load customers:", error);
+            alert("An error occurred while loading the customer data.");
+        }
+    })
 }
 
-$("#customer-btn-save").on('click',() =>{
+function customerSave(){
+    if (!validateCustomer()) {
+         return;
+    }
+            
+     var cusId = $("#cus_id").val();
+     var cusName = $("#cus_name").val();
+     var cusAddress = $("#cus_address").val();
+     var cusTel = $("#cus_tel").val();
+
+     $.ajax({
+        url:"http://localhost:8081/posApi/customer",
+        method:"POST",
+        contentType:"application/json",
+        "data":JSON.stringify({
+            "customerId":cusId,
+            "customerName":cusName,
+            "customerAddress":cusAddress,
+            "customerTel":cusTel
+        }),
+        success:function(result){
+            console.log(result);
+            alert("Customer Saved Successfully");
+            reset();
+            loadCustomers();
+        },
+        error:function(result){
+            alert("Customer Save Unsuccessful");
+            console.log(result);
+        }
+        
+     })
+}
+
+function customerUpdate(){
     if (!validateCustomer()) {
         return;
-    }
-    
+   }
+           
     var cusId = $("#cus_id").val();
     var cusName = $("#cus_name").val();
     var cusAddress = $("#cus_address").val();
     var cusTel = $("#cus_tel").val();
 
-    let isDuplicate = customers.some(customer => customer.cusId === cusId);
+    $.ajax({
+        url:"http://localhost:8081/posApi/customer",
+        method:"PUT",
+        contentType:"application/json",
+        "data":JSON.stringify({
+            "customerId":cusId,
+            "customerName":cusName,
+            "customerAddress":cusAddress,
+            "customerTel":cusTel
+        }),
+        success:function (results) {
+            console.log(results);
+            alert("Customer Update Successfull");
+            reset();
+            loadCustomers();
+        },
+        error:function (error) {
+            console.log(error);
+            alert("Customer Update Unsuccessful");
+        }
+    })
+}
 
-    if(isDuplicate){
-        alert('Customer ID Already Exists. Please Try another one');
-        return;
-    }
-    
-    let customer = new CustomerModel(cusId,cusName,cusAddress,cusTel);
-    
-    customers.push(customer);
-    loadTableCustomer();
-    updateCustomerCount();
-    
-    reset();
-    
+function customerDelete(){
+    var cusId = $("#cus_id").val();
+
+    $.ajax({
+        url:"http://localhost:8081/posApi/customer" + cusId,
+        method:"DELETE",
+        contentType:"application/json",
+        success:function (results) {
+            console.log(results);
+            alert("Success");
+            loadCustomers();
+        },
+        error:function (error) {
+            console.log(error);
+            alert("Unsuccessful");
+        }
+    })
+}
+
+
+saveBtn.on('click',function(){
+    event.preventDefault();
+    customerSave();
 });
 
-$("#customer-btn-update").on('click',() =>{
-    var cusId = $("#cus_id").val();
-    var cusName = $("#cus_name").val();
-    var cusAddress = $("#cus_address").val();
-    var cusTel = $("#cus_tel").val();
+updateBtn.on('click',function(){
+    event.preventDefault();
+    customerUpdate();
+})
 
-    console.log(cusId);
-    console.log(cusName);
-    console.log(cusAddress);
-    console.log(cusTel);
+deleteBtn.on('click',function(){
+    customerDelete();
+})
 
 
-    customers[recordIndex] = new CustomerModel(cusId,cusName,cusAddress,cusTel);
+
+// $("#customer-btn-update").on('click',() =>{
+//     var cusId = $("#cus_id").val();
+//     var cusName = $("#cus_name").val();
+//     var cusAddress = $("#cus_address").val();
+//     var cusTel = $("#cus_tel").val();
+
+//     console.log(cusId);
+//     console.log(cusName);
+//     console.log(cusAddress);
+//     console.log(cusTel);
+
+
+//     customers[recordIndex] = new CustomerModel(cusId,cusName,cusAddress,cusTel);
     
-    loadTableCustomer(customers);
-    reset();
+//     loadTableCustomer(customers);
+//     reset();
   
-});
+// });
 
-$("#customer-btn-delete").on('click',() =>{
-    customers.splice(recordIndex,1);
-    loadTableCustomer();
-    reset();
-});
+// $("#customer-btn-delete").on('click',() =>{
+//     customers.splice(recordIndex,1);
+//     loadTableCustomer();
+//     reset();
+// });
 
 $("#customer-table").on('click','tr',function (){
     let index = $(this).index();

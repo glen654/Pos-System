@@ -1,49 +1,12 @@
-import ItemModel from "../model/ItemModel.js";
-import {items} from "../db/db.js"
 const saveBtn = $('#item-btn-save');
 const updateBtn = $('#item-btn-update');
 const deleteBtn = $('#item-btn-delete');
 
 var recordIndex;
 
-// function loadTableItem(){
-//     $("#table-item").empty();
-
-//     items.map((item,index) => {
-//         var record = `<tr>
-//             <td class="item-code-value">${item.itemCode}</td>
-//             <td class="item-name-value">${item.itemName}</td>
-//             <td class="item-qty-value">${item.itemQty}</td>
-//             <td class="item-price-value">${item.itemPrice}</td>
-//         <tr>`
-//         $("#table-item").append(record);
-//     });
-// }
-// $("#item-btn-save").on('click',() => {
-//     if(!validateItem()){
-//         return;
-//     }
-    
-//     var itemCode = $("#item_code").val();
-//     var itemName = $("#item_name").val();
-//     var itemQty = $("#item_qty").val();
-//     var itemPrice = $("#item_price").val();
-
-//     let isDuplicate = items.some(item => item.itemCode === itemCode);
-
-//     if(isDuplicate){
-//         alert("Item Code Already Exists. Try a Different Item Code");
-//         return;
-//     }
-
-//     let item = new ItemModel(itemCode,itemName,itemQty,itemPrice);
-
-//     items.push(item);
-//     loadTableItem();
-//     updateItemCount();
-    
-//     reset();
-// });
+$(document).ready(function() {
+    loadItem();
+});
 
 function loadItem(){
     $.ajax({ 
@@ -156,42 +119,6 @@ function itemDelete(){
     })
 }
 
-saveBtn.on('click',function(){
-    event.preventDefault();
-    itemSave();
-});
-
-updateBtn.on('click',function(){
-    event.preventDefault();
-    itemUpdate();
-});
-
-deleteBtn.on('click',function(){
-    itemDelete();
-});
-
-// $("#item-btn-update").on('click',() =>{
-//     var itemCode = $("#item_code").val();
-//     var itemName = $("#item_name").val();
-//     var itemQty = $("#item_qty").val();
-//     var itemPrice = $("#item_price").val();
-
-
-//     items[recordIndex] = new ItemModel(itemCode,itemName,itemQty,itemPrice);
-
-
-//     loadTableItem(items);
-//     reset();
-
-// });
-
-// $("#item-btn-delete").on('click',() =>{
-//     items.splice(recordIndex,1);
-//     loadTableItem();
-//     reset();
-
-// });
-
 $("#table-item").on('click','tr',function (){
     let index = $(this).index();
     recordIndex = index;
@@ -261,3 +188,25 @@ function validateItem(){
 
     return true;
 }
+
+saveBtn.on('click',function(){
+    event.preventDefault();
+    itemSave();
+});
+
+updateBtn.on('click',function(){
+    event.preventDefault();
+    itemUpdate();
+});
+
+deleteBtn.on('click',function(){
+    itemDelete();
+});
+
+
+
+
+
+
+
+

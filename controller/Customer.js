@@ -47,12 +47,17 @@ var recordIndex;
     
 // });
 
+$(document).ready(function() {
+    loadCustomers();
+});
+
 function loadCustomers(){
     $.ajax({ 
         url: 'http://localhost:8081/posApi/customer',
         type: 'GET',           
         contentType: 'application/json', 
         success: function(customers) {
+            console.log("Customers loaded:", customers);
             $("#customer-table").empty();
             
             customers.forEach(function(item) {

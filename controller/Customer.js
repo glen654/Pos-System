@@ -1,5 +1,5 @@
 import CustomerModel from "../model/CustomerModel.js";
-import {customers} from "../db/db.js"
+// import {customers} from "../db/db.js"
 const saveBtn = $('#customer-btn-save');
 const updateBtn = $('#customer-btn-update');
 const deleteBtn = $('#customer-btn-delete');
@@ -48,7 +48,7 @@ var recordIndex;
 // });
 
 function loadCustomers(){
-    $.ajax({
+    $.ajax({ 
         url: 'http://localhost:8081/posApi/customer',
         type: 'GET',           
         contentType: 'application/json', 
@@ -72,6 +72,7 @@ function loadCustomers(){
         }
     })
 }
+
 
 function customerSave(){
     if (!validateCustomer()) {

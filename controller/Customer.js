@@ -1,5 +1,3 @@
-import CustomerModel from "../model/CustomerModel.js";
-// import {customers} from "../db/db.js"
 const saveBtn = $('#customer-btn-save');
 const updateBtn = $('#customer-btn-update');
 const deleteBtn = $('#customer-btn-delete');
@@ -124,11 +122,10 @@ function customerUpdate(){
     var cusTel = $("#cus_tel").val();
 
     $.ajax({
-        url:"http://localhost:8081/posApi/customer",
+        url:"http://localhost:8081/posApi/customer" + cusId,
         method:"PUT",
         contentType:"application/json",
         "data":JSON.stringify({
-            "customerId":cusId,
             "customerName":cusName,
             "customerAddress":cusAddress,
             "customerTel":cusTel

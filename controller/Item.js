@@ -1,5 +1,8 @@
 import ItemModel from "../model/ItemModel.js";
 import {items} from "../db/db.js"
+const saveBtn = $('#item-btn-save');
+const updateBtn = $('#item-btn-update');
+const deleteBtn = $('#item-btn-delete');
 
 var recordIndex;
 
@@ -16,31 +19,65 @@ function loadTableItem(){
         $("#table-item").append(record);
     });
 }
-$("#item-btn-save").on('click',() => {
-    if(!validateItem()){
-        return;
-    }
+// $("#item-btn-save").on('click',() => {
+//     if(!validateItem()){
+//         return;
+//     }
     
-    var itemCode = $("#item_code").val();
-    var itemName = $("#item_name").val();
-    var itemQty = $("#item_qty").val();
-    var itemPrice = $("#item_price").val();
+//     var itemCode = $("#item_code").val();
+//     var itemName = $("#item_name").val();
+//     var itemQty = $("#item_qty").val();
+//     var itemPrice = $("#item_price").val();
 
-    let isDuplicate = items.some(item => item.itemCode === itemCode);
+//     let isDuplicate = items.some(item => item.itemCode === itemCode);
 
-    if(isDuplicate){
-        alert("Item Code Already Exists. Try a Different Item Code");
-        return;
-    }
+//     if(isDuplicate){
+//         alert("Item Code Already Exists. Try a Different Item Code");
+//         return;
+//     }
 
-    let item = new ItemModel(itemCode,itemName,itemQty,itemPrice);
+//     let item = new ItemModel(itemCode,itemName,itemQty,itemPrice);
 
-    items.push(item);
-    loadTableItem();
-    updateItemCount();
+//     items.push(item);
+//     loadTableItem();
+//     updateItemCount();
     
-    reset();
-});
+//     reset();
+// });
+
+function itemSave(){
+    if (!validateItem()) {
+        return;
+   }
+           
+   var itemCode = $("#item_code").val();
+   var itemName = $("#item_name").val();
+   var itemQty = $("#item_qty").val();
+   var itemPrice = $("#item_price").val();
+
+    $.ajax({
+       url:"http://localhost:8081/posApi/item",
+       method:"POST",
+       contentType:"application/json",
+       "data":JSON.stringify({
+           "itemCode":itemCode,
+           "itemName":itemName,
+           "qtyOnHand":itemQty,
+           "unitPrice":itemPrice
+       }),
+       success:function(result){
+           console.log(result);
+           alert("Item Saved Successfully");
+           reset();
+           loadCustomers();
+       },
+       error:function(result){
+           alert("Item Save Unsuccessful");
+           console.log(result);
+       }
+       
+    })
+}
 
 $("#item-btn-update").on('click',() =>{
     var itemCode = $("#item_code").val();

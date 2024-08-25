@@ -45,6 +45,32 @@ function loadTableItem(){
 //     reset();
 // });
 
+function loadItem(){
+    $.ajax({ 
+        url: 'http://localhost:8081/posApi/item',
+        type: 'GET',           
+        contentType: 'application/json', 
+        success: function(items) {
+            console.log("Items loaded:", items);
+            $("#table-item").empty();
+            
+            items.forEach(function(item) {
+                var record = `
+                    <tr>
+                       <td class="item-code-value">${item.itemCode}</td>
+                       <td class="item-name-value">${item.itemName}</td>
+                       <td class="item-qty-value">${item.qtyOnHand}</td>
+                       <td class="item-price-value">${item.unitPrice}</td> 
+                    </tr>`;
+                $("#table-item").append(record);
+            });
+        },
+        error: function(xhr, status, error) {
+            console.error("Failed to load Items:", error);
+            alert("An error occurred while loading the item data.");
+        }
+    })
+}
 function itemSave(){
     if (!validateItem()) {
         return;
@@ -69,7 +95,7 @@ function itemSave(){
            console.log(result);
            alert("Item Saved Successfully");
            reset();
-           loadCustomers();
+           loadItem();
        },
        error:function(result){
            alert("Item Save Unsuccessful");
@@ -78,6 +104,11 @@ function itemSave(){
        
     })
 }
+
+saveBtn.on('click',function(){
+    event.preventDefault();
+    itemSave();
+});
 
 $("#item-btn-update").on('click',() =>{
     var itemCode = $("#item_code").val();

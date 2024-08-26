@@ -3623,8 +3623,19 @@ h4{
         padding-bottom: 5px;
         position: absolute;
         top: 60px;
+        left: 20px;
+    }
+
+    #order-id-input{
+        width: 149px;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 60px;
         left: 175px;
     }
+
 
     #item-id-label{
         position: absolute;

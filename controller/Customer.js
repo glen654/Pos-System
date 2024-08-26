@@ -74,14 +74,14 @@ function customerUpdate(){
     if (!validateCustomer()) {
         return;
    }
-           
-    var cusId = $("#cus_id").val();
+
+    var customerId = $("#cus_id").val();
     var cusName = $("#cus_name").val();
     var cusAddress = $("#cus_address").val();
     var cusTel = $("#cus_tel").val();
 
     $.ajax({
-        url:"http://localhost:8081/posApi/customer/" + cusId,
+        url:"http://localhost:8081/posApi/customer?customerId=" + customerId,
         method:"PUT",
         contentType:"application/json",
         "data":JSON.stringify({
@@ -98,17 +98,16 @@ function customerUpdate(){
         error:function (error) {
             console.log("Status:", status);
             console.log("Error:", error);
-            console.log("Response Text:", xhr.responseText);
             alert("Customer update unsuccessful");
         }
     })
 }
 
 function customerDelete(){
-    var cusId = $("#cus_id").val();
+    var customerId = $("#cus_id").val();
 
     $.ajax({
-        url:"http://localhost:8081/posApi/customer/" + cusId,
+        url:"http://localhost:8081/posApi/customer?customerId=" + customerId,
         method:"DELETE",
         contentType:"application/json",
         success:function (results) {
@@ -119,7 +118,6 @@ function customerDelete(){
         error:function (error) {
             console.log("Status:", status);
             console.log("Error:", error);
-            console.log("Response Text:", xhr.responseText);
             alert("Customer Delete unsuccessful");
         }
     })

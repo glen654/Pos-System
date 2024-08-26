@@ -80,7 +80,7 @@ function itemUpdate(){
 
 
     $.ajax({
-        url:"http://localhost:8081/posApi/item/" + itemCode,
+        url:"http://localhost:8081/posApi/item?itemCode=" + itemCode,
         method:"PUT",
         contentType:"application/json",
         "data":JSON.stringify({
@@ -97,7 +97,6 @@ function itemUpdate(){
         error:function (error) {
             console.log("Status:", status);
             console.log("Error:", error);
-            console.log("Response Text:", xhr.responseText);
             alert("Item update unsuccessful");
         }
     })
@@ -107,7 +106,7 @@ function itemDelete(){
     var itemCode = $("#item_code").val();
 
     $.ajax({
-        url:"http://localhost:8081/posApi/item/" + itemCode,
+        url:"http://localhost:8081/posApi/item?itemCode=" + itemCode,
         method:"DELETE",
         contentType:"application/json",
         success:function (results) {
@@ -118,7 +117,6 @@ function itemDelete(){
         error:function (error) {
             console.log("Status:", status);
             console.log("Error:", error);
-            console.log("Response Text:", xhr.responseText);
             alert("Item Delete unsuccessful");
         }
     })

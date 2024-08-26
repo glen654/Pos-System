@@ -96,8 +96,10 @@ function customerUpdate(){
             loadCustomers();
         },
         error:function (error) {
-            console.log(error);
-            alert("Customer Update Unsuccessful");
+            console.log("Status:", status);
+            console.log("Error:", error);
+            console.log("Response Text:", xhr.responseText);
+            alert("Customer update unsuccessful");
         }
     })
 }
@@ -115,8 +117,10 @@ function customerDelete(){
             loadCustomers();
         },
         error:function (error) {
-            console.log(error);
-            alert("Unsuccessful");
+            console.log("Status:", status);
+            console.log("Error:", error);
+            console.log("Response Text:", xhr.responseText);
+            alert("Customer Delete unsuccessful");
         }
     })
 }

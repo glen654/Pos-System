@@ -95,8 +95,10 @@ function itemUpdate(){
             loadItem();
         },
         error:function (error) {
-            console.log(error);
-            alert("Item Update Unsuccessful");
+            console.log("Status:", status);
+            console.log("Error:", error);
+            console.log("Response Text:", xhr.responseText);
+            alert("Item update unsuccessful");
         }
     })
 }
@@ -114,8 +116,10 @@ function itemDelete(){
             loadItem();
         },
         error:function (error) {
-            console.log(error);
-            alert("Delete Item Unsuccessful");
+            console.log("Status:", status);
+            console.log("Error:", error);
+            console.log("Response Text:", xhr.responseText);
+            alert("Item Delete unsuccessful");
         }
     })
 }

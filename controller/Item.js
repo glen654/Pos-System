@@ -78,8 +78,9 @@ function itemUpdate(){
    var itemQty = $("#item_qty").val();
    var itemPrice = $("#item_price").val();
 
+
     $.ajax({
-        url:"http://localhost:8081/posApi/item" + itemCode,
+        url:"http://localhost:8081/posApi/item/" + itemCode,
         method:"PUT",
         contentType:"application/json",
         "data":JSON.stringify({
@@ -104,7 +105,7 @@ function itemDelete(){
     var itemCode = $("#item_code").val();
 
     $.ajax({
-        url:"http://localhost:8081/posApi/item" + itemCode,
+        url:"http://localhost:8081/posApi/item/" + itemCode,
         method:"DELETE",
         contentType:"application/json",
         success:function (results) {

@@ -81,7 +81,7 @@ function customerUpdate(){
     var cusTel = $("#cus_tel").val();
 
     $.ajax({
-        url:"http://localhost:8081/posApi/customer" + cusId,
+        url:"http://localhost:8081/posApi/customer/" + cusId,
         method:"PUT",
         contentType:"application/json",
         "data":JSON.stringify({
@@ -106,7 +106,7 @@ function customerDelete(){
     var cusId = $("#cus_id").val();
 
     $.ajax({
-        url:"http://localhost:8081/posApi/customer" + cusId,
+        url:"http://localhost:8081/posApi/customer/" + cusId,
         method:"DELETE",
         contentType:"application/json",
         success:function (results) {

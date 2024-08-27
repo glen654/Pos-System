@@ -1,6 +1,6 @@
 import PlaceOrder from "../model/PlaceOrderModel.js";
 import {orders,customers,items} from "../db/db.js";
-
+const purchaseBtn = $('#btn-purchase');
 
 let currentOrderId = 1;
 
@@ -153,28 +153,75 @@ $(document).ready(() => {
         });
     }
 
-    $('#btn-purchase').on('click',() => {
+    // $('#btn-purchase').on('click',() => {
+    //     calculate();
+
+    //     var orderId = $('#order-input').val();
+    //     var itemCode = $('#item-dropdown option:selected').val();
+    //     var customerId = $('#customer-dropdown option:selected').val();
+    //     var date = $('#date-input').val();
+    //     var qty = $('#order-qty-input').val();
+    //     var price = $('#price-input').val();
+    //     var total = $('#total-label').text();
+
+
+    //     let order = newType Exception Report
+
+    //     orders.push(order);
+    //     loadOrderTable();
+    //     updateOrderCount();
+        
+    //     reset();
+
+    // });
+
+    function saveOrder(){
         calculate();
 
         var orderId = $('#order-input').val();
         var itemCode = $('#item-dropdown option:selected').val();
         var customerId = $('#customer-dropdown option:selected').val();
         var date = $('#date-input').val();
-        var qty = $('#order-qty-input').val();
-        var price = $('#price-input').val();
-        var total = $('#total-label').text();
+        var qty = parseInt($('#order-qty-input').val());
+        var price = parseFloat($('#price-input').val()); 
+        var total = parseFloat($('#total-label').text());
 
+        $.ajax({
+            url:"http://localhost:8081/posApi/order",
+            method:"POST",
+            contentType:"application/json",
+            "data":JSON.stringify({
+                "order": {
+                    "orderId": orderId,
+                    "orderDate": date,
+                    "customerId": customerId,
+                    "totalAmount": total
+                },
+                "orderDetails": [{
+                    "orderId": orderId,
+                    "itemCode": itemCode,
+                    "orderQty": qty,
+                    "unitPrice": price
+                }]
+            }),
+            success:function(result){
+                console.log(result);
+                alert("Order Saved Successfully");
+                reset();
+            },
+            error:function(result){
+                alert("Order Save Unsuccessful");
+                console.log(result);
+            }
 
-        let order = new PlaceOrder(orderId,itemCode,customerId,date,qty,price,total);
+         })
+    }
 
-        orders.push(order);
-        loadOrderTable();
-        updateOrderCount();
-        
-        reset();
-
-    });
-
+    purchaseBtn.on('click',function(){
+        event.preventDefault();
+        saveOrder();
+    })
+    
     function reset(){
          $('#order-input').val('');
          $('#name-input').val('');

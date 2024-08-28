@@ -153,27 +153,6 @@ $(document).ready(() => {
         });
     }
 
-    // $('#btn-purchase').on('click',() => {
-    //     calculate();
-
-    //     var orderId = $('#order-input').val();
-    //     var itemCode = $('#item-dropdown option:selected').val();
-    //     var customerId = $('#customer-dropdown option:selected').val();
-    //     var date = $('#date-input').val();
-    //     var qty = $('#order-qty-input').val();
-    //     var price = $('#price-input').val();
-    //     var total = $('#total-label').text();
-
-
-    //     let order = newType Exception Report
-
-    //     orders.push(order);
-    //     loadOrderTable();
-    //     updateOrderCount();
-        
-    //     reset();
-
-    // });
 
     function saveOrder(){
         calculate();

@@ -5,7 +5,7 @@ const purchaseBtn = $('#btn-purchase');
 let currentOrderId = 1;
 
 $(document).ready(() => {
-    generateOrderId();
+   
     setDate();
 
     function generateOrderId() {
@@ -179,8 +179,8 @@ $(document).ready(() => {
         calculate();
 
         var orderId = $('#order-input').val();
-        var itemCode = $('#item-dropdown option:selected').val();
-        var customerId = $('#customer-dropdown option:selected').val();
+        var itemCode = $('#item-id-input').val();
+        var customerId = $('#customer-id').val();
         var date = $('#date-input').val();
         var qty = parseInt($('#order-qty-input').val());
         var price = parseFloat($('#price-input').val()); 
@@ -191,13 +191,13 @@ $(document).ready(() => {
             method:"POST",
             contentType:"application/json",
             "data":JSON.stringify({
-                "order": {
+                "orderDTO": {
                     "orderId": orderId,
                     "orderDate": date,
                     "customerId": customerId,
                     "totalAmount": total
                 },
-                "orderDetails": [{
+                "orderDetailDTOS": [{
                     "orderId": orderId,
                     "itemCode": itemCode,
                     "orderQty": qty,
